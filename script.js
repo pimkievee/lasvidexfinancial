@@ -22,7 +22,7 @@ if (menuToggle && navLinks) {
 }
 
 const revealTargets = document.querySelectorAll(
-  ".section, .stats, .dark-section, .trusted-partners, .cta, .card, .trusted-logo-card, .form, .resource-card, .article-aside"
+  ".section, .stats, .dark-section, .trusted-partners, .cta, .card, .trusted-logo-card, .form, .resource-card, .article-aside, .article-inline-cta, .article-related-bottom, .local-proof"
 );
 
 if ("IntersectionObserver" in window) {

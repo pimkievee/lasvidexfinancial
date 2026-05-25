@@ -7,31 +7,37 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://veelegacy.ca/about.html</loc>
+    <loc>https://veelegacy.ca/about/</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://veelegacy.ca/services.html</loc>
+    <loc>https://veelegacy.ca/services/</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://veelegacy.ca/travel-insurance.html</loc>
+    <loc>https://veelegacy.ca/financial-planner-whitby/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://veelegacy.ca/travel-insurance/</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://veelegacy.ca/contact.html</loc>
+    <loc>https://veelegacy.ca/contact/</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://veelegacy.ca/lead.html</loc>
+    <loc>https://veelegacy.ca/lead/</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

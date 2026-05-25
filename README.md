@@ -8,7 +8,12 @@ This is a premium static website for VeeLegacy Financial Services, positioned ar
 - Services
 - Travel Insurance Quote
 - Resources
+- Financial Planner in Whitby local SEO page
 - Contact / Consultation
+
+## Search Setup
+
+See `SEO-SETUP.md` for Google Search Console, Bing Webmaster, Google Analytics 4, and Google Business Profile setup steps.
 
 ## SEO Planning
 
