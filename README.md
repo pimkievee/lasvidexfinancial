@@ -1,6 +1,6 @@
-# VeeLegacy Professional Insurance Website
+# VeeLegacy Financial Strategy Website
 
-This is a professional static website inspired by modern insurance advisor websites.
+This is a premium static website for VeeLegacy Financial Services, positioned around strategic wealth planning, investment planning, financial protection, retirement planning, estate planning, and business financial strategies.
 
 ## Pages
 - Home
