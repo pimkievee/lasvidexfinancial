@@ -9,6 +9,10 @@ This is a premium static website for VeeLegacy Financial Services, positioned ar
 - Travel Insurance Quote
 - Contact / Consultation
 
+## SEO Planning
+
+See `SEO-CONTENT-RECOMMENDATIONS.md` for recommended future landing pages and blog-style guides targeting Ontario, Whitby, RESP, TFSA, RRSP, estate planning, life insurance, newcomers, and family financial planning search intent.
+
 ## Travel Insurance Quote Page
 The quote page collects client details. To allow a client to receive an instant quote, you need either:
 1. a provider quote link that this page can redirect to, or
