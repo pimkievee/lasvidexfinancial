@@ -504,66 +504,6 @@ a.card:hover {
   box-shadow: 0 18px 50px rgba(0,0,0,0.12);
 }
 
-.partners-band {
-  background:
-    linear-gradient(180deg, rgba(255,250,241,0.96), rgba(255,240,245,0.82)),
-    var(--cream);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.logo-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 34px;
-}
-
-.logo-tile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 104px;
-  padding: 20px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.88);
-  box-shadow: 0 8px 26px rgba(59, 20, 95, 0.05);
-}
-
-.logo-tile img {
-  width: 100%;
-  max-width: 180px;
-  max-height: 58px;
-  object-fit: contain;
-}
-
-.logo-tile.compact img {
-  max-height: 72px;
-}
-
-.logo-tile.dark-logo {
-  background: var(--navy);
-  border-color: rgba(255,255,255,0.16);
-}
-
-.logo-tile.featured {
-  min-height: 126px;
-  border-color: rgba(201, 163, 93, 0.5);
-  background:
-    linear-gradient(135deg, rgba(255,255,255,0.94), rgba(255,241,245,0.86));
-  box-shadow: 0 18px 42px rgba(59, 20, 95, 0.11);
-}
-
-.logo-tile.featured img {
-  max-width: 210px;
-  max-height: 72px;
-}
-
-.logo-tile.dark-logo img {
-  filter: none;
-}
-
 .cta {
   width: min(1080px, calc(100% - 40px));
   margin: 70px auto 86px;
@@ -737,55 +677,88 @@ textarea:focus {
 }
 
 .trusted-partners {
-  padding: 70px 0 64px;
+  scroll-margin-top: 92px;
+  padding: 84px 0 78px;
   border-top: 1px solid rgba(234, 216, 228, 0.88);
   background:
-    linear-gradient(180deg, rgba(255, 250, 241, 0.96), rgba(255, 240, 245, 0.78)),
+    linear-gradient(180deg, rgba(255, 250, 241, 0.98), rgba(255, 240, 245, 0.82)),
     var(--cream);
 }
 
 .trusted-partners-inner {
-  width: min(880px, calc(100% - 40px));
+  width: min(var(--max), calc(100% - 40px));
   margin: 0 auto;
   text-align: center;
 }
 
 .trusted-partners h2 {
-  margin: 0 auto 12px;
+  max-width: 900px;
+  margin: 0 auto 16px;
 }
 
-.trusted-partners p:not(.eyebrow) {
+.trusted-partners-copy {
+  max-width: 720px;
   margin: 0 auto;
   color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
 }
 
-.trusted-logo-row {
+.trusted-logo-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-  max-width: 620px;
-  margin: 34px auto 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 42px auto 0;
 }
 
 .trusted-logo-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 126px;
-  padding: 28px;
-  border: 1px solid rgba(210, 172, 99, 0.4);
+  min-height: 108px;
+  padding: 20px;
+  border: 1px solid rgba(234, 216, 228, 0.92);
   border-radius: 8px;
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(255, 247, 239, 0.92)),
     var(--white);
-  box-shadow: 0 18px 44px rgba(59, 20, 95, 0.09);
+  box-shadow: 0 10px 30px rgba(59, 20, 95, 0.06);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trusted-logo-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(210, 172, 99, 0.58);
+  box-shadow: 0 18px 42px rgba(59, 20, 95, 0.11);
 }
 
 .trusted-logo-card img {
   width: 100%;
-  max-width: 210px;
-  max-height: 74px;
+  max-width: 180px;
+  max-height: 58px;
   object-fit: contain;
+}
+
+.trusted-logo-card.featured {
+  min-height: 130px;
+  border-color: rgba(210, 172, 99, 0.52);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.96), rgba(255,241,245,0.9));
+  box-shadow: 0 18px 44px rgba(59, 20, 95, 0.1);
+}
+
+.trusted-logo-card.featured img {
+  max-width: 215px;
+  max-height: 76px;
+}
+
+.trusted-logo-card.compact img {
+  max-height: 72px;
+}
+
+.trusted-logo-card.dark-logo {
+  border-color: rgba(255,255,255,0.16);
+  background: var(--navy);
 }
 
 .footer {
@@ -1062,10 +1035,6 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 
-  .logo-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .section-header {
     display: block;
   }
@@ -1152,7 +1121,6 @@ textarea:focus {
     margin: -24px auto 28px;
   }
 
-  .logo-grid,
   .form-two {
     grid-template-columns: 1fr;
   }
@@ -1167,8 +1135,8 @@ textarea:focus {
     max-width: calc(100vw - 28px);
   }
 
-  .trusted-logo-row {
-    grid-template-columns: 1fr;
+  .trusted-logo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
   }
 
