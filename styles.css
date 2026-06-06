@@ -603,7 +603,7 @@ h3 {
 }
 
 .article-related-bottom {
-  display: grid;
+  display: none;
   gap: 10px;
   margin-top: 34px;
 }
@@ -1451,7 +1451,12 @@ textarea:focus {
   }
 
   .article-aside {
+    display: none;
     position: static;
+  }
+
+  .article-related-bottom {
+    display: grid;
   }
 
   .hero-visual {
