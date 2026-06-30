@@ -1,6 +1,6 @@
 # SEO Content Recommendations
 
-These are the next content pages and blog-style resources that would strengthen VeeLegacy's organic search visibility. They are prioritized around local intent, Canadian financial planning topics, and the keyword set already used in the site metadata.
+These are the next content pages and blog-style resources that would strengthen Lasvidex Financial's organic search visibility. They are prioritized around local intent, Canadian financial planning topics, and the keyword set already used in the site metadata.
 
 ## Highest-Priority Pages
 

@@ -1,6 +1,6 @@
-# VeeLegacy Financial Strategy Website
+# Lasvidex Financial Strategy Website
 
-This is a premium static website for VeeLegacy Financial Services, positioned around strategic wealth planning, investment planning, financial protection, retirement planning, estate planning, and business financial strategies.
+This is a premium static website for Lasvidex Financial, positioned around strategic wealth planning, investment planning, financial protection, retirement planning, estate planning, and business financial strategies.
 
 ## Pages
 - Home
@@ -32,14 +32,13 @@ Deploy on Netlify for easy form submission collection.
 
 ## Replace images
 Replace:
-- `assets/logo.png`
-- `assets/profile.jpg`
+- `assets/lasvidex-financial-logo.jpg`
 
 ## GitHub
 ```bash
 git init
 git add .
-git commit -m "Initial VeeLegacy professional website"
+git commit -m "Initial Lasvidex Financial professional website"
 git branch -M main
 git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
 git push -u origin main
