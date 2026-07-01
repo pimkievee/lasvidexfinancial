@@ -1260,6 +1260,14 @@ textarea:focus {
   background: transparent;
 }
 
+.social-icons .social-facebook svg {
+  color: #1877f2;
+}
+
+.social-icons .social-linkedin svg {
+  color: #0a66c2;
+}
+
 .social-icons a:hover {
   color: var(--white);
   transform: translateY(-2px);
