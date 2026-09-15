@@ -1,0 +1,27 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/supereag/lasvidexfinancial.com/
+    - /bin/cp -R about $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R book-session $DEPLOYPATH
+    - /bin/cp -R contact $DEPLOYPATH
+    - /bin/cp -R financial-planner-whitby $DEPLOYPATH
+    - /bin/cp -R lead $DEPLOYPATH
+    - /bin/cp -R resources $DEPLOYPATH
+    - /bin/cp -R services $DEPLOYPATH
+    - /bin/cp -R travel-insurance $DEPLOYPATH
+    - /bin/cp CNAME $DEPLOYPATH
+    - /bin/cp _redirects $DEPLOYPATH
+    - /bin/cp about.html $DEPLOYPATH
+    - /bin/cp book-session.html $DEPLOYPATH
+    - /bin/cp contact.html $DEPLOYPATH
+    - /bin/cp financial-planner-whitby.html $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp lead.html $DEPLOYPATH
+    - /bin/cp robots.txt $DEPLOYPATH
+    - /bin/cp script.js $DEPLOYPATH
+    - /bin/cp services.html $DEPLOYPATH
+    - /bin/cp sitemap.xml $DEPLOYPATH
+    - /bin/cp styles.css $DEPLOYPATH
+    - /bin/cp travel-insurance.html $DEPLOYPATH
