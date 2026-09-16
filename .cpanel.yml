@@ -11,8 +11,6 @@ deployment:
     - /bin/cp -R resources $DEPLOYPATH
     - /bin/cp -R services $DEPLOYPATH
     - /bin/cp -R travel-insurance $DEPLOYPATH
-    - /bin/cp CNAME $DEPLOYPATH
-    - /bin/cp _redirects $DEPLOYPATH
     - /bin/cp about.html $DEPLOYPATH
     - /bin/cp book-session.html $DEPLOYPATH
     - /bin/cp contact.html $DEPLOYPATH
