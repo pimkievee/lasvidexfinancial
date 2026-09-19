@@ -186,7 +186,8 @@
   <style>
     .top-social-bar {
       width: 100%;
-      background: #17245b;
+      height: 44px;
+      background: #1b2a64;
       color: #ffffff;
       position: relative;
       z-index: 1000;
@@ -194,10 +195,9 @@
 
     .top-social-inner {
       width: 100%;
-      max-width: 1400px;
-      min-height: 40px;
-      margin: 0 auto;
-      padding: 0 24px;
+      height: 44px;
+      margin: 0;
+      padding: 0 15px;
       box-sizing: border-box;
 
       display: flex;
@@ -208,12 +208,12 @@
     .top-social-links {
       display: flex;
       align-items: center;
-      gap: 17px;
+      gap: 28px;
     }
 
     .top-social-links a {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
 
       display: inline-flex;
       align-items: center;
@@ -222,14 +222,11 @@
       color: #ffffff;
       text-decoration: none;
 
-      transition:
-        opacity 0.2s ease,
-        transform 0.2s ease;
+      transition: opacity 0.2s ease;
     }
 
     .top-social-links a:hover {
       opacity: 0.75;
-      transform: translateY(-1px);
     }
 
     .top-social-links svg {
@@ -247,9 +244,10 @@
       color: #ffffff;
       text-decoration: none;
 
-      font-size: 14px;
-      font-weight: 500;
+      font-size: 16px;
+      font-weight: 600;
       line-height: 1;
+      white-space: nowrap;
 
       transition: opacity 0.2s ease;
     }
@@ -259,34 +257,34 @@
     }
 
     .top-phone svg {
-      width: 17px;
-      height: 17px;
+      width: 18px;
+      height: 18px;
       fill: currentColor;
       display: block;
     }
 
     @media (max-width: 600px) {
+      .top-social-bar,
       .top-social-inner {
-        min-height: 38px;
-        padding: 0 15px;
+        height: 40px;
+      }
+
+      .top-social-inner {
+        padding: 0 12px;
       }
 
       .top-social-links {
-        gap: 12px;
+        gap: 17px;
       }
 
-      .top-social-links a {
-        width: 18px;
-        height: 18px;
-      }
-
+      .top-social-links a,
       .top-social-links svg {
         width: 16px;
         height: 16px;
       }
 
       .top-phone {
-        font-size: 12px;
+        font-size: 13px;
         gap: 5px;
       }
 
@@ -337,7 +335,7 @@
           aria-label="Instagram"
         >
           <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M7.8 2.75h8.4a5.05 5.05 0 0 1 5.05 5.05v8.4a5.05 5.05 0 0 1-5.05 5.05H7.8a5.05 5.05 0 0 1-5.05-5.05V7.8A5.05 5.05 0 0 1 7.8 2.75Zm0 1.7A3.35 3.35 0 0 0 4.45 7.8v8.4a3.35 3.35 0 0 0 3.35 3.35h8.4a3.35 3.35 0 0 0 3.35-3.35V7.8a3.35 3.35 0 0 0-3.35-3.35H7.8Zm4.2 3.15a4.4 4.4 0 1 1 0 8.8 4.4 4.4 0 0 1 0-8.8Zm0 1.7a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm4.65-2.15a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1Z"/>
+            <path d="M7.8 2.5h8.4A5.3 5.3 0 0 1 21.5 7.8v8.4a5.3 5.3 0 0 1-5.3 5.3H7.8a5.3 5.3 0 0 1-5.3-5.3V7.8A5.3 5.3 0 0 1 7.8 2.5Zm0 1.8a3.5 3.5 0 0 0-3.5 3.5v8.4a3.5 3.5 0 0 0 3.5 3.5h8.4a3.5 3.5 0 0 0 3.5-3.5V7.8a3.5 3.5 0 0 0-3.5-3.5H7.8Zm4.2 2.9a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm0 1.8a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5-2.15a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3Z"/>
           </svg>
         </a>
 
