@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Request Financial Guidance Canada | Lasvidex Financial</title>
@@ -177,41 +177,27 @@
   <style>
     .lxf-topbar {
       width: 100%;
-      background: #111827;
+      background: #1b2a64;
       color: #ffffff;
       font-family: "Inter", sans-serif;
       font-size: 14px;
     }
 
     .lxf-topbar-inner {
-      max-width: 1200px;
+      width: 100%;
       margin: 0 auto;
-      padding: 8px 20px;
+      padding: 8px 6%;
       display: flex;
       align-items: center;
-      justify-content: flex-end;
-      gap: 18px;
+      justify-content: space-between;
       box-sizing: border-box;
-    }
-
-    .lxf-topbar-phone {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      white-space: nowrap;
-    }
-
-    .lxf-topbar-phone:hover {
-      text-decoration: underline;
+      min-height: 36px;
     }
 
     .lxf-topbar-social {
       display: flex;
       align-items: center;
-      gap: 13px;
+      gap: 28px;
     }
 
     .lxf-topbar-social a {
@@ -234,25 +220,45 @@
       display: block;
     }
 
+    .lxf-topbar-phone {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+
+    .lxf-topbar-phone:hover {
+      text-decoration: underline;
+    }
+
+    .lxf-topbar-phone svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+      display: block;
+    }
+
     @media (max-width: 640px) {
       .lxf-topbar-inner {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px 15px;
-        padding: 8px 12px;
+        padding: 8px 15px;
+        gap: 15px;
+      }
+
+      .lxf-topbar-social {
+        gap: 16px;
+      }
+
+      .lxf-topbar-social svg,
+      .lxf-topbar-phone svg {
+        width: 17px;
+        height: 17px;
       }
 
       .lxf-topbar-phone {
         font-size: 13px;
-      }
-
-      .lxf-topbar-social {
-        gap: 11px;
-      }
-
-      .lxf-topbar-social svg {
-        width: 17px;
-        height: 17px;
       }
     }
   </style>
@@ -264,17 +270,7 @@
 <div class="lxf-topbar">
   <div class="lxf-topbar-inner">
 
-    <a
-      class="lxf-topbar-phone"
-      href="tel:+16474669921"
-      aria-label="Call Lasvidex Financial"
-    >
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.3-.3.73-.39 1.12-.26 1.23.41 2.55.63 3.92.63.61 0 1.1.49 1.1 1.1v3.5c0 .61-.49 1.1-1.1 1.1C10.62 21.75 2.25 13.38 2.25 3.55c0-.61.49-1.1 1.1-1.1h3.5c.61 0 1.1.49 1.1 1.1 0 1.37.22 2.69.63 3.92.12.39.03.82-.26 1.12l-2.2 2.2Z"/>
-      </svg>
-      +1 (647) 466-9921
-    </a>
-
+    <!-- SOCIAL LINKS - LEFT -->
     <div class="lxf-topbar-social">
 
       <!-- Facebook -->
@@ -301,15 +297,15 @@
         </svg>
       </a>
 
-      <!-- TikTok -->
+      <!-- YouTube -->
       <a
-        href="https://www.tiktok.com/@lasvidexfinancial?_r=1&_t=ZS-97d4Lxt3nTJ"
+        href="https://www.youtube.com/@lasvidexfinancial"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="TikTok"
+        aria-label="YouTube"
       >
         <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M15.7 2.75c.35 2.55 1.79 4.07 4.25 4.23v3.02a7.36 7.36 0 0 1-4.18-1.29v6.23c0 3.15-2.03 6.31-6.19 6.31a5.45 5.45 0 0 1-5.53-5.42c0-3.47 2.76-5.78 6.88-5.25v3.16c-1.8-.57-3.64.25-3.64 2.05a2.16 2.16 0 0 0 2.26 2.14c1.55 0 2.45-.9 2.45-3.03V2.75h3.71Z"/>
+          <path d="M23.5 6.2a3 3 0 0 0-2.11-2.12C19.52 3.5 12 3.5 12 3.5s-7.52 0-9.39.58A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.11 2.12C4.48 20.5 12 20.5 12 20.5s7.52 0 9.39-.58a3 3 0 0 0 2.11-2.12A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8ZM9.6 15.5v-7l6.2 3.5-6.2 3.5Z"/>
         </svg>
       </a>
 
@@ -325,19 +321,32 @@
         </svg>
       </a>
 
-      <!-- YouTube -->
+      <!-- TikTok -->
       <a
-        href="https://www.youtube.com/@lasvidexfinancial"
+        href="https://www.tiktok.com/@lasvidexfinancial?_r=1&_t=ZS-97d4Lxt3nTJ"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="YouTube"
+        aria-label="TikTok"
       >
         <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M23.5 6.2a3 3 0 0 0-2.11-2.12C19.52 3.5 12 3.5 12 3.5s-7.52 0-9.39.58A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.11 2.12C4.48 20.5 12 20.5 12 20.5s7.52 0 9.39-.58a3 3 0 0 0 2.11-2.12A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8ZM9.6 15.5v-7l6.2 3.5-6.2 3.5Z"/>
+          <path d="M15.7 2.75c.35 2.55 1.79 4.07 4.25 4.23v3.02a7.36 7.36 0 0 1-4.18-1.29v6.23c0 3.15-2.03 6.31-6.19 6.31a5.45 5.45 0 0 1-5.53-5.42c0-3.47 2.76-5.78 6.88-5.25v3.16c-1.8-.57-3.64.25-3.64 2.05a2.16 2.16 0 0 0 2.26 2.14c1.55 0 2.45-.9 2.45-3.03V2.75h3.71Z"/>
         </svg>
       </a>
 
     </div>
+
+    <!-- PHONE - RIGHT -->
+    <a
+      class="lxf-topbar-phone"
+      href="tel:+16474669921"
+      aria-label="Call Lasvidex Financial"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.3-.3.73-.39 1.12-.26 1.23.41 2.55.63 3.92.63.61 0 1.1.49 1.1 1.1v3.5c0 .61-.49 1.1-1.1 1.1C10.62 21.75 2.25 13.38 2.25 3.55c0-.61.49-1.1 1.1-1.1h3.5c.61 0 1.1.49 1.1 1.1 0 1.37.22 2.69.63 3.92.12.39.03.82-.26 1.12l-2.2 2.2Z"/>
+      </svg>
+      +1 (647) 466-9921
+    </a>
+
   </div>
 </div>
 
