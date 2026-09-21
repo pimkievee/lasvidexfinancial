@@ -293,6 +293,58 @@
         height: 15px;
       }
     }
+
+
+    /* Desktop navigation: keep the full navigation on one line */
+    @media (min-width: 901px) {
+      .site-header .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        min-width: 0;
+      }
+
+      .site-header .brand {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        min-width: 0;
+      }
+
+      .site-header .brand span {
+        white-space: nowrap;
+      }
+
+      .site-header .nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px;
+        flex: 1 1 auto;
+        min-width: 0;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+      }
+
+      .site-header .nav-links > a {
+        white-space: nowrap;
+        flex: 0 0 auto;
+        font-size: 14px;
+        line-height: 1.2;
+      }
+
+      .site-header .nav-links .nav-cta {
+        white-space: nowrap;
+        flex: 0 0 auto;
+      }
+    }
+
+    /* Keep the mobile header behavior unchanged */
+    @media (max-width: 900px) {
+      .site-header .nav-links {
+        white-space: normal;
+      }
+    }
   </style>
 
   <script data-clean-url-redirect>
