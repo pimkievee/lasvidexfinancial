@@ -221,6 +221,86 @@
       }
     }
   </style>
+
+  <!-- DESKTOP NAVIGATION — MATCH HOME PAGE -->
+  <style>
+    @media (min-width: 1101px) {
+      .site-header .nav {
+        display: grid;
+        grid-template-columns: 290px minmax(0, 1fr);
+        align-items: center;
+        column-gap: 25px;
+        width: 100%;
+        min-height: 100px;
+        padding: 0 4%;
+        box-sizing: border-box;
+      }
+
+      .site-header .brand {
+        width: 290px;
+        min-width: 290px;
+        max-width: 290px;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        white-space: nowrap;
+      }
+
+      .site-header .brand img {
+        width: 56px;
+        height: 56px;
+        object-fit: contain;
+        flex-shrink: 0;
+      }
+
+      .site-header .brand span {
+        white-space: nowrap;
+      }
+
+      .site-header .nav-links {
+        min-width: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 16px;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+      }
+
+      .site-header .nav-links > a {
+        white-space: nowrap;
+        flex-shrink: 0;
+        font-size: 15px;
+        line-height: 1.2;
+      }
+
+      .site-header .nav-links .nav-cta {
+        white-space: nowrap;
+        flex-shrink: 0;
+        padding: 18px 28px;
+        border-radius: 10px;
+        background: linear-gradient(
+          135deg,
+          #e2bd58,
+          #ae8126
+        );
+        color: #10213c;
+        font-weight: 800;
+        box-shadow: 0 12px 30px rgba(174, 129, 38, 0.18);
+      }
+
+      .site-header .nav-links .nav-cta:hover {
+        background: linear-gradient(
+          135deg,
+          #d8b34d,
+          #a47720
+        );
+        color: #10213c;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
