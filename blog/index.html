@@ -243,6 +243,46 @@
       gap: 24px;
     }
 
+    /* Keep the desktop brand and navigation separated, matching the main site */
+    @media (min-width: 1101px) {
+      .site-header .nav {
+        display: grid;
+        grid-template-columns: 290px minmax(0, 1fr);
+        align-items: center;
+        column-gap: 25px;
+      }
+
+      .site-header .brand {
+        width: 290px;
+        min-width: 290px;
+        max-width: 290px;
+        white-space: nowrap;
+      }
+
+      .site-header .nav-links {
+        min-width: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 16px;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+      }
+
+      .site-header .nav-links > a {
+        white-space: nowrap;
+        flex-shrink: 0;
+        font-size: 15px;
+        line-height: 1.2;
+      }
+
+      .site-header .nav-links .nav-cta {
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+    }
+
     .brand {
       display: inline-flex;
       align-items: center;
@@ -277,6 +317,11 @@
 
     .nav-links a:hover {
       color: var(--gold-dark);
+    }
+
+    .nav-links a[aria-current="page"] {
+      color: var(--gold-dark);
+      font-weight: 800;
     }
 
     .nav-links .nav-cta {
@@ -420,13 +465,21 @@
     }
 
     .category {
-      padding: 7px 15px;
-      border: 1px solid #ddd4bf;
-      border-radius: 999px;
-      background: #fbf8ef;
-      color: #755817;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border: 1px solid #ead9ad;
+      border-radius: 10px;
+      background: #f7e8c2;
+      color: #765817;
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .category:hover {
+      background: #f0dca9;
     }
 
     /* =========================================================
