@@ -4,6 +4,7 @@ deployment:
     - export DEPLOYPATH=/home/supereag/lasvidexfinancial.com/
     - /bin/cp -R about $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R blog $DEPLOYPATH
     - /bin/cp -R book-session $DEPLOYPATH
     - /bin/cp -R contact $DEPLOYPATH
     - /bin/cp -R financial-planner-whitby $DEPLOYPATH
