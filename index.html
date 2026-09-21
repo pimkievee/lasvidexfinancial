@@ -418,6 +418,60 @@
       );
     }
   </script>
+
+  <style>
+    /* Final desktop navigation consistency with Home, About and Services */
+    @media (min-width: 1101px) {
+      .site-header .nav {
+        display: grid;
+        grid-template-columns: 290px minmax(0, 1fr);
+        align-items: center;
+        column-gap: 25px;
+        width: 100%;
+        min-height: 100px;
+        padding-left: 4%;
+        padding-right: 4%;
+        box-sizing: border-box;
+      }
+
+      .site-header .brand {
+        width: 290px;
+        min-width: 290px;
+        max-width: 290px;
+        white-space: nowrap;
+      }
+
+      .site-header .brand span {
+        white-space: nowrap;
+      }
+
+      .site-header .nav-links {
+        min-width: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 16px;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+      }
+
+      .site-header .nav-links > a {
+        white-space: nowrap;
+        flex: 0 0 auto;
+        min-width: max-content;
+        font-size: 15px;
+        line-height: 1.2;
+      }
+
+      .site-header .nav-links .nav-cta {
+        white-space: nowrap;
+        flex: 0 0 auto;
+        min-width: max-content;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
