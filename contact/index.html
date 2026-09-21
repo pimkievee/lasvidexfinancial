@@ -173,6 +173,115 @@
 
   <link rel="stylesheet" href="/styles.css" />
 
+  <!-- CLEAN DESKTOP NAVIGATION — MATCH OTHER PAGES -->
+  <style>
+    @media (min-width: 1101px) {
+      .site-header .nav {
+        width: 100%;
+        min-height: 78px;
+        height: 78px;
+        padding: 0 3.5%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 320px minmax(0, 1fr);
+        align-items: center;
+        column-gap: 18px;
+      }
+
+      .site-header .brand {
+        width: 320px;
+        min-width: 320px;
+        max-width: 320px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        white-space: nowrap;
+        text-decoration: none;
+      }
+
+      .site-header .brand img {
+        width: 52px;
+        height: 52px;
+        min-width: 52px;
+        object-fit: contain;
+        flex: 0 0 52px;
+      }
+
+      .site-header .brand span {
+        display: block;
+        white-space: nowrap;
+        font-size: 21px;
+        line-height: 1.15;
+      }
+
+      .site-header .nav-links {
+        width: 100%;
+        min-width: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 14px;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+      }
+
+      .site-header .nav-links > a {
+        display: inline-flex;
+        align-items: center;
+        flex: 0 0 auto;
+        min-width: max-content;
+        white-space: nowrap;
+        font-size: 14px;
+        line-height: 1.15;
+        text-decoration: none;
+      }
+
+      .site-header .nav-links .nav-cta {
+        flex: 0 0 auto;
+        min-width: max-content;
+        padding: 15px 24px;
+        white-space: nowrap;
+        text-align: center;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #e2bd58, #ae8126);
+        color: #10213c;
+      }
+    }
+
+    @media (min-width: 1101px) and (max-width: 1450px) {
+      .site-header .nav {
+        grid-template-columns: 280px minmax(0, 1fr);
+        column-gap: 14px;
+        min-height: 74px;
+        height: 74px;
+        padding-left: 3%;
+        padding-right: 3%;
+      }
+
+      .site-header .brand {
+        width: 280px;
+        min-width: 280px;
+        max-width: 280px;
+      }
+
+      .site-header .brand span {
+        font-size: 20px;
+      }
+
+      .site-header .nav-links {
+        gap: 12px;
+      }
+
+      .site-header .nav-links > a {
+        font-size: 14px;
+      }
+
+      .site-header .nav-links .nav-cta {
+        padding: 17px 22px;
+      }
+    }
+  </style>
+
   <!-- Top Social Bar Styles -->
   <style>
     .lxf-topbar {
@@ -388,6 +497,7 @@
       <a href="/services/">Financial Planning Services</a>
       <a href="/travel-insurance/">Travel Insurance Canada</a>
       <a href="/resources/">Resources</a>
+      <a href="/blog/">Blog</a>
       <a href="/contact/">Request Financial Guidance</a>
       <a href="/book-session/" class="nav-cta">Book Consultation</a>
     </div>
@@ -894,6 +1004,7 @@
         <a href="/services/">Financial Planning Services</a>
         <a href="/travel-insurance/">Travel Insurance Canada</a>
         <a href="/resources/">Resources</a>
+        <a href="/blog/">Blog</a>
         <a href="/contact/">Request Financial Guidance</a>
       </nav>
 
