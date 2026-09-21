@@ -211,6 +211,67 @@
       }
     }
   </style>
+
+  <style>
+    /* Keep Financial Planning Services desktop navigation aligned with the homepage */
+    @media (min-width: 1101px) {
+      .site-header .nav {
+        display: grid;
+        grid-template-columns: 290px minmax(0, 1fr);
+        align-items: center;
+        column-gap: 25px;
+        width: 100%;
+        min-height: 100px;
+        padding: 0 4%;
+        box-sizing: border-box;
+      }
+
+      .site-header .brand {
+        width: 290px;
+        min-width: 290px;
+        max-width: 290px;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        white-space: nowrap;
+      }
+
+      .site-header .brand img {
+        width: 56px;
+        height: 56px;
+        object-fit: contain;
+        flex-shrink: 0;
+      }
+
+      .site-header .brand span {
+        white-space: nowrap;
+      }
+
+      .site-header .nav-links {
+        min-width: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 16px;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+      }
+
+      .site-header .nav-links > a {
+        white-space: nowrap;
+        flex-shrink: 0;
+        font-size: 15px;
+        line-height: 1.2;
+      }
+
+      .site-header .nav-links .nav-cta {
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -329,6 +390,7 @@
       <a href="/services/">Financial Planning Services</a>
       <a href="/travel-insurance/">Travel Insurance Canada</a>
       <a href="/resources/">Resources</a>
+      <a href="/blog/">Blog</a>
       <a href="/contact/">Request Financial Guidance</a>
       <a href="/book-session/" class="nav-cta">Book Consultation</a>
     </div>
@@ -895,6 +957,7 @@
         <a href="/services/">Financial Planning Services</a>
         <a href="/travel-insurance/">Travel Insurance Canada</a>
         <a href="/resources/">Resources</a>
+        <a href="/blog/">Blog</a>
         <a href="/contact/">Request Financial Guidance</a>
       </nav>
 
