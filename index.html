@@ -295,40 +295,80 @@
     }
 
 
-    /* Desktop navigation: keep the full navigation on one line */
+    /* =========================================================
+       FINAL DESKTOP NAVIGATION FIX
+       Keeps the brand and navigation in separate areas so they
+       never overlap. The mobile header remains unchanged.
+       ========================================================= */
     @media (min-width: 901px) {
       .site-header .nav {
-        display: flex;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding-left: 4%;
+        padding-right: 4%;
+        box-sizing: border-box;
+
+        display: grid;
+        grid-template-columns: 305px minmax(0, 1fr);
         align-items: center;
-        justify-content: space-between;
-        gap: 18px;
-        min-width: 0;
+        column-gap: 24px;
       }
 
+      /* Brand occupies its own fixed column */
       .site-header .brand {
-        flex: 0 0 auto;
+        width: 305px;
+        min-width: 305px;
+        max-width: 305px;
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        flex: none;
+
         white-space: nowrap;
-        min-width: 0;
+        overflow: visible;
+      }
+
+      .site-header .brand img {
+        flex: 0 0 auto;
       }
 
       .site-header .brand span {
+        display: inline-block;
+        flex: 0 0 auto;
         white-space: nowrap;
       }
 
+      /* Navigation gets the entire remaining column */
       .site-header .nav-links {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+
         display: flex;
         align-items: center;
         justify-content: flex-end;
+
         gap: 15px;
-        flex: 1 1 auto;
-        min-width: 0;
+        flex: none;
         flex-wrap: nowrap;
         white-space: nowrap;
       }
 
       .site-header .nav-links > a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+
         white-space: nowrap;
         flex: 0 0 auto;
+        min-width: max-content;
+
         font-size: 14px;
         line-height: 1.2;
       }
@@ -336,10 +376,34 @@
       .site-header .nav-links .nav-cta {
         white-space: nowrap;
         flex: 0 0 auto;
+        min-width: max-content;
+        margin-left: 2px;
       }
     }
 
-    /* Keep the mobile header behavior unchanged */
+
+    @media (min-width: 901px) and (max-width: 1200px) {
+      .site-header .nav {
+        grid-template-columns: 260px minmax(0, 1fr);
+        column-gap: 12px;
+      }
+
+      .site-header .brand {
+        width: 260px;
+        min-width: 260px;
+        max-width: 260px;
+      }
+
+      .site-header .nav-links {
+        gap: 9px;
+      }
+
+      .site-header .nav-links > a {
+        font-size: 12px;
+      }
+    }
+
+    /* At tablet/mobile widths use the site's existing mobile menu. */
     @media (max-width: 900px) {
       .site-header .nav-links {
         white-space: normal;
