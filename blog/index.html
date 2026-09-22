@@ -243,19 +243,38 @@
       gap: 24px;
     }
 
-    /* Keep the desktop brand and navigation separated, matching the main site */
+  <style>
+    /* Keep the About-page desktop header aligned with the main homepage navigation */
     @media (min-width: 1101px) {
       .site-header .nav {
         display: grid;
         grid-template-columns: 290px minmax(0, 1fr);
         align-items: center;
         column-gap: 25px;
+        width: 100%;
+        min-height: 100px;
+        padding: 0 4%;
+        box-sizing: border-box;
       }
 
       .site-header .brand {
         width: 290px;
         min-width: 290px;
         max-width: 290px;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        white-space: nowrap;
+      }
+
+      .site-header .brand img {
+        width: 56px;
+        height: 56px;
+        object-fit: contain;
+        flex-shrink: 0;
+      }
+
+      .site-header .brand span {
         white-space: nowrap;
       }
 
@@ -282,6 +301,7 @@
         flex-shrink: 0;
       }
     }
+  </style>
 
     .brand {
       display: inline-flex;
@@ -1136,80 +1156,43 @@
        MAIN HEADER
        ========================================================= -->
 
-  <header class="site-header">
+<header class="site-header">
+  <nav class="nav">
 
-    <nav class="nav">
+    <a class="brand" href="/" aria-label="Lasvidex Financial home">
+      <img src="/assets/lasvidex-financial-logo.jpg"
+           width="256"
+           height="256"
+           alt="Lasvidex Financial logo"
+           decoding="async" />
+      <span>Lasvidex Financial</span>
+    </a>
 
-      <a
-        class="brand"
-        href="/"
-        aria-label="Lasvidex Financial home"
-      >
+    <a class="mobile-header-cta"
+       href="/contact/"
+       aria-label="Request Financial Guidance">
+       Request Financial Guidance
+    </a>
 
-        <img
-          src="/assets/lasvidex-financial-logo.jpg"
-          width="256"
-          height="256"
-          alt="Lasvidex Financial logo"
-          decoding="async"
-        >
+    <button class="menu-toggle"
+            aria-label="Open menu"
+            aria-expanded="false">
+      ☰
+    </button>
 
-        <span>Lasvidex Financial</span>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/services/">Financial Planning Services</a>
+      <a href="/travel-insurance/">Travel Insurance Canada</a>
+      <a href="/resources/">Resources</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Request Financial Guidance</a>
+      <a href="/book-session/" class="nav-cta">Book Consultation</a>
+    </div>
 
-      </a>
-
-
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Open menu"
-        aria-expanded="false"
-      >
-        ☰
-      </button>
-
-
-      <div class="nav-links">
-
-        <a href="/">Home</a>
-
-        <a href="/about/">About</a>
-
-        <a href="/services/">
-          Financial Planning Services
-        </a>
-
-        <a href="/travel-insurance/">
-          Travel Insurance Canada
-        </a>
-
-        <a href="/resources/">
-          Resources
-        </a>
-
-        <a
-          href="/blog/"
-          aria-current="page"
-        >
-          Blog
-        </a>
-
-        <a href="/contact/">
-          Request Financial Guidance
-        </a>
-
-        <a
-          href="/book-session/"
-          class="nav-cta"
-        >
-          Book Consultation
-        </a>
-
-      </div>
-
-    </nav>
-
-  </header>
+  </nav>
+</header>
 
 
   <!-- =========================================================
