@@ -144,19 +144,23 @@
 
   <link rel="stylesheet" href="/styles.css" />
 
-  <!-- TOP SOCIAL BAR STYLES -->
+  <!-- TOP SOCIAL BAR STYLES — MATCH HOMEPAGE -->
   <style>
     .top-social-bar {
       width: 100%;
-      background: #18265c;
+      height: 44px;
+      background: #1b2a64;
       color: #ffffff;
+      position: relative;
+      z-index: 1000;
     }
 
     .top-social-inner {
-      max-width: 1400px;
-      min-height: 46px;
-      margin: 0 auto;
+      width: 100%;
+      height: 44px;
+      margin: 0;
       padding: 0 4%;
+      box-sizing: border-box;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -165,7 +169,7 @@
     .top-social-links {
       display: flex;
       align-items: center;
-      gap: 22px;
+      gap: 28px;
     }
 
     .top-social-links a {
@@ -176,48 +180,72 @@
       justify-content: center;
       color: #ffffff;
       text-decoration: none;
+      transition: opacity 0.2s ease;
     }
 
     .top-social-links a:hover {
-      opacity: 0.7;
+      opacity: 0.75;
     }
 
     .top-social-links svg {
       width: 18px;
       height: 18px;
       fill: currentColor;
+      display: block;
     }
 
     .top-phone {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       gap: 8px;
       color: #ffffff;
       text-decoration: none;
+      font-size: 16px;
       font-weight: 600;
-      font-size: 15px;
+      line-height: 1;
+      white-space: nowrap;
+      transition: opacity 0.2s ease;
     }
 
     .top-phone:hover {
       opacity: 0.8;
     }
 
-    @media (max-width: 700px) {
+    .top-phone svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .top-social-bar {
+        height: 40px;
+      }
+
       .top-social-inner {
-        padding: 0 18px;
+        height: 40px;
+        padding: 0 12px;
       }
 
       .top-social-links {
-        gap: 15px;
+        gap: 17px;
       }
 
+      .top-social-links a,
       .top-social-links svg {
         width: 16px;
         height: 16px;
       }
 
       .top-phone {
-        font-size: 12px;
+        font-size: 13px;
+        gap: 5px;
+      }
+
+      .top-phone svg {
+        width: 15px;
+        height: 15px;
       }
     }
   </style>
@@ -297,6 +325,98 @@
           #a47720
         );
         color: #10213c;
+      }
+    }
+  </style>
+
+
+  <!-- FINAL RESOURCE PAGE ALIGNMENT — MATCH HOMEPAGE -->
+  <style>
+    @media (min-width: 1101px) {
+      .site-header .nav {
+        display: grid !important;
+        grid-template-columns: 290px minmax(0, 1fr) !important;
+        align-items: center !important;
+        column-gap: 25px !important;
+        width: 100% !important;
+        min-height: 100px !important;
+        padding: 0 4% !important;
+        box-sizing: border-box !important;
+      }
+
+      .site-header .brand {
+        width: 290px !important;
+        min-width: 290px !important;
+        max-width: 290px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 12px !important;
+        white-space: nowrap !important;
+      }
+
+      .site-header .brand img {
+        width: 56px !important;
+        height: 56px !important;
+        object-fit: contain !important;
+        flex: 0 0 56px !important;
+      }
+
+      .site-header .brand span {
+        white-space: nowrap !important;
+        font-size: 24px !important;
+        font-weight: 800 !important;
+        line-height: 1.2 !important;
+      }
+
+      .site-header .nav-links {
+        min-width: 0 !important;
+        width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+        gap: 16px !important;
+        flex-wrap: nowrap !important;
+        white-space: nowrap !important;
+      }
+
+      .site-header .nav-links > a {
+        white-space: nowrap !important;
+        flex: 0 0 auto !important;
+        min-width: max-content !important;
+        font-size: 15px !important;
+        line-height: 1.2 !important;
+      }
+
+      .site-header .nav-links .nav-cta {
+        white-space: nowrap !important;
+        flex: 0 0 auto !important;
+        min-width: max-content !important;
+        padding: 18px 28px !important;
+        border-radius: 10px !important;
+        background: linear-gradient(135deg, #e2bd58, #ae8126) !important;
+        color: #10213c !important;
+        font-weight: 800 !important;
+        box-shadow: 0 12px 30px rgba(174, 129, 38, 0.18) !important;
+      }
+    }
+
+    /* Match the homepage's centered content width and side padding. */
+    .page > .section,
+    .page > .dark-section > .section {
+      width: 100%;
+      max-width: 1180px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+
+    @media (max-width: 700px) {
+      .page > .section,
+      .page > .dark-section > .section {
+        padding-left: 20px;
+        padding-right: 20px;
       }
     }
   </style>
@@ -389,8 +509,8 @@
     <a class="brand" href="/" aria-label="Lasvidex Financial home">
       <img
         src="/assets/lasvidex-financial-logo.jpg"
-        width="256"
-        height="256"
+        width="56"
+        height="56"
         alt="Lasvidex Financial logo"
         decoding="async"
       />
