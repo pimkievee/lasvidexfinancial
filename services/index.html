@@ -211,69 +211,7 @@
       }
     }
   </style>
-
-  <style>
-    /* Keep Financial Planning Services desktop navigation aligned with the homepage */
-    @media (min-width: 1101px) {
-      .site-header .nav {
-        display: grid;
-        grid-template-columns: 290px minmax(0, 1fr);
-        align-items: center;
-        column-gap: 25px;
-        width: 100%;
-        min-height: 100px;
-        padding: 0 4%;
-        box-sizing: border-box;
-      }
-
-      .site-header .brand {
-        width: 290px;
-        min-width: 290px;
-        max-width: 290px;
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        white-space: nowrap;
-      }
-
-      .site-header .brand img {
-        width: 56px;
-        height: 56px;
-        object-fit: contain;
-        flex-shrink: 0;
-      }
-
-      .site-header .brand span {
-        white-space: nowrap;
-      }
-
-      .site-header .nav-links {
-        min-width: 0;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 16px;
-        flex-wrap: nowrap;
-        white-space: nowrap;
-      }
-
-      .site-header .nav-links > a {
-        white-space: nowrap;
-        flex-shrink: 0;
-        font-size: 15px;
-        line-height: 1.2;
-      }
-
-      .site-header .nav-links .nav-cta {
-        white-space: nowrap;
-        flex-shrink: 0;
-      }
-    }
-  </style>
-
-
-  <style>
+<style>
     /* =========================================================
        SERVICES HERO — CENTER THESE THREE ELEMENTS ONLY
        ========================================================= */
@@ -302,6 +240,157 @@
 
     .page > .section:first-child > .lead {
       display: block !important;
+    }
+  </style>
+
+
+  <style>
+    /* =========================================================
+       FINANCIAL SERVICES HEADER — SAME AS HOME + ABOUT
+       ========================================================= */
+
+    @media (min-width: 901px) {
+      .site-header .nav {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding-left: 4%;
+        padding-right: 4%;
+        box-sizing: border-box;
+
+        display: grid;
+        grid-template-columns: 305px minmax(0, 1fr);
+        align-items: center;
+        column-gap: 24px;
+      }
+
+      .site-header .brand {
+        width: 305px;
+        min-width: 305px;
+        max-width: 305px;
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        flex: none;
+        white-space: nowrap;
+        overflow: visible;
+      }
+
+      .site-header .brand img {
+        flex: 0 0 auto;
+      }
+
+      .site-header .brand span {
+        display: inline-block;
+        flex: 0 0 auto;
+        white-space: nowrap;
+      }
+
+      .site-header .nav-links {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        gap: 15px;
+        flex: none;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+      }
+
+      .site-header .nav-links > a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        white-space: nowrap;
+        flex: 0 0 auto;
+        min-width: max-content;
+
+        font-size: 14px;
+        line-height: 1.2;
+      }
+
+      .site-header .nav-links .nav-cta {
+        white-space: nowrap;
+        flex: 0 0 auto;
+        min-width: max-content;
+        margin-left: 2px;
+      }
+    }
+
+    @media (min-width: 901px) and (max-width: 1200px) {
+      .site-header .nav {
+        grid-template-columns: 260px minmax(0, 1fr);
+        column-gap: 12px;
+      }
+
+      .site-header .brand {
+        width: 260px;
+        min-width: 260px;
+        max-width: 260px;
+      }
+
+      .site-header .nav-links {
+        gap: 9px;
+      }
+
+      .site-header .nav-links > a {
+        font-size: 12px;
+      }
+    }
+
+    /* Final brand sizing — same corrected Home/About standard */
+    @media (min-width: 1101px) {
+      .site-header .brand {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+        white-space: nowrap !important;
+        height: 100% !important;
+      }
+
+      .site-header .brand img {
+        width: 52px !important;
+        height: 52px !important;
+        flex: 0 0 52px !important;
+        object-fit: contain !important;
+      }
+
+      .site-header .brand span {
+        display: inline-block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 19px !important;
+        line-height: 1.1 !important;
+        font-weight: 800 !important;
+        white-space: nowrap !important;
+        align-self: center !important;
+      }
+    }
+
+    @media (min-width: 1101px) and (max-width: 1500px) {
+      .site-header .brand {
+        gap: 8px !important;
+      }
+
+      .site-header .brand img {
+        width: 48px !important;
+        height: 48px !important;
+        flex-basis: 48px !important;
+      }
+
+      .site-header .brand span {
+        font-size: 18px !important;
+      }
     }
   </style>
 
