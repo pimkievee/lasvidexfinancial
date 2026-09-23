@@ -509,6 +509,55 @@
 }
 </style>
 
+
+  <style>
+    /* Final Home header brand sizing/alignment */
+    @media (min-width: 1101px) {
+      .site-header .brand {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+        white-space: nowrap !important;
+        height: 100% !important;
+      }
+
+      .site-header .brand img {
+        width: 52px !important;
+        height: 52px !important;
+        flex: 0 0 52px !important;
+        object-fit: contain !important;
+      }
+
+      .site-header .brand span {
+        display: inline-block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 19px !important;
+        line-height: 1.1 !important;
+        font-weight: 800 !important;
+        white-space: nowrap !important;
+        align-self: center !important;
+      }
+    }
+
+    /* Keep the compact desktop version proportional */
+    @media (min-width: 1101px) and (max-width: 1500px) {
+      .site-header .brand {
+        gap: 8px !important;
+      }
+
+      .site-header .brand img {
+        width: 48px !important;
+        height: 48px !important;
+        flex-basis: 48px !important;
+      }
+
+      .site-header .brand span {
+        font-size: 18px !important;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
