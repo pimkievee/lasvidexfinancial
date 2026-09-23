@@ -419,144 +419,302 @@
     }
   </script>
 
-  <style>
-    /* Final desktop navigation consistency with Home, About and Services */
-    @media (min-width: 1101px) {
-      .site-header .nav {
-        display: grid;
-        grid-template-columns: 290px minmax(0, 1fr);
-        align-items: center;
-        column-gap: 25px;
-        width: 100%;
-        min-height: 100px;
-        padding-left: 4%;
-        padding-right: 4%;
-        box-sizing: border-box;
-      }
 
-      .site-header .brand {
-        width: 290px;
-        min-width: 290px;
-        max-width: 290px;
-        white-space: nowrap;
-      }
+<style id="lasvidex-universal-header">
+/* =========================================================
+   LASVIDEX FINANCIAL — UNIVERSAL HEADER
+   Same header dimensions/spacing on every desktop page.
+   ========================================================= */
 
-      .site-header .brand span {
-        white-space: nowrap;
-      }
-
-      .site-header .nav-links {
-        min-width: 0;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 16px;
-        flex-wrap: nowrap;
-        white-space: nowrap;
-      }
-
-      .site-header .nav-links > a {
-        white-space: nowrap;
-        flex: 0 0 auto;
-        min-width: max-content;
-        font-size: 15px;
-        line-height: 1.2;
-      }
-
-      .site-header .nav-links .nav-cta {
-        white-space: nowrap;
-        flex: 0 0 auto;
-        min-width: max-content;
-      }
-    }
-  </style>
-
-
-
-<style id="uniform-responsive-header">
-@media (min-width:1501px){
-.site-header .nav{display:grid!important;grid-template-columns:290px minmax(0,1fr)!important;align-items:center!important;column-gap:25px!important;width:100%!important;min-height:100px!important;padding:0 4%!important;box-sizing:border-box!important}
-.site-header .brand{width:290px!important;min-width:290px!important;max-width:290px!important;display:inline-flex!important;align-items:center!important;gap:12px!important;white-space:nowrap!important;overflow:visible!important}
-.site-header .brand img{width:56px!important;height:56px!important;object-fit:contain!important;flex:0 0 56px!important}
-.site-header .brand span{white-space:nowrap!important;font-size:24px!important;line-height:1.2!important}
-.site-header .nav-links{min-width:0!important;width:100%!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:16px!important;flex-wrap:nowrap!important;white-space:nowrap!important}
-.site-header .nav-links>a{white-space:nowrap!important;flex:0 0 auto!important;min-width:max-content!important;font-size:15px!important;line-height:1.2!important}
-.site-header .nav-links .nav-cta{padding:18px 28px!important;white-space:nowrap!important;flex:0 0 auto!important}
+.top-social-bar{
+  width:100%;
+  height:44px;
+  min-height:44px;
+  background:#1b2a64;
+  color:#fff;
+  position:relative;
+  z-index:1000;
 }
-@media (min-width:1151px) and (max-width:1500px){
-.site-header .nav{display:grid!important;grid-template-columns:250px minmax(0,1fr)!important;align-items:center!important;column-gap:16px!important;width:100%!important;min-height:100px!important;padding:0 3%!important;box-sizing:border-box!important}
-.site-header .brand{width:250px!important;min-width:250px!important;max-width:250px!important;display:inline-flex!important;align-items:center!important;gap:9px!important;white-space:nowrap!important;overflow:visible!important}
-.site-header .brand img{width:52px!important;height:52px!important;object-fit:contain!important;flex:0 0 52px!important}
-.site-header .brand span{white-space:nowrap!important;font-size:21px!important;line-height:1.2!important}
-.site-header .nav-links{min-width:0!important;width:100%!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:9px!important;flex-wrap:nowrap!important;white-space:nowrap!important}
-.site-header .nav-links>a{white-space:nowrap!important;flex:0 0 auto!important;min-width:max-content!important;font-size:13px!important;line-height:1.2!important}
-.site-header .nav-links .nav-cta{padding:15px 18px!important;white-space:nowrap!important;flex:0 0 auto!important}
+
+.top-social-inner{
+  width:100%;
+  height:44px;
+  margin:0;
+  padding:0 4%;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
-@media (min-width:901px) and (max-width:1150px){
-.site-header .nav{display:flex!important;align-items:center!important;justify-content:space-between!important;width:100%!important;min-height:90px!important;padding:0 4%!important;box-sizing:border-box!important}
-.site-header .brand{width:auto!important;min-width:0!important;max-width:none!important;display:inline-flex!important;align-items:center!important;gap:10px!important;white-space:nowrap!important}
-.site-header .brand img{width:52px!important;height:52px!important;flex:0 0 52px!important}
-.site-header .brand span{font-size:22px!important;white-space:nowrap!important}
-.site-header .nav-links{display:none!important}
-.site-header .menu-toggle{display:inline-flex!important;align-items:center!important;justify-content:center!important;flex:0 0 auto!important}
-.site-header .mobile-header-cta{display:inline-flex!important;margin-left:auto!important;margin-right:18px!important}
+
+.top-social-links{
+  display:flex;
+  align-items:center;
+  gap:28px;
+  flex:0 0 auto;
 }
+
+.top-social-links a{
+  width:18px;
+  height:18px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  text-decoration:none;
+  flex:0 0 18px;
+}
+
+.top-social-links svg{
+  width:18px;
+  height:18px;
+  fill:currentColor;
+  display:block;
+}
+
+.top-phone{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:#fff;
+  text-decoration:none;
+  font-size:15px;
+  font-weight:600;
+  line-height:1;
+  white-space:nowrap;
+  flex:0 0 auto;
+}
+
+.top-phone svg{
+  width:18px;
+  height:18px;
+  fill:currentColor;
+  display:block;
+}
+
+/* Desktop: fixed brand column + fixed navigation row */
+@media (min-width:1201px){
+  .site-header .nav{
+    width:100%!important;
+    height:78px!important;
+    min-height:78px!important;
+    margin:0!important;
+    padding:0 4%!important;
+    box-sizing:border-box!important;
+    display:grid!important;
+    grid-template-columns:305px minmax(0,1fr)!important;
+    column-gap:24px!important;
+    align-items:center!important;
+  }
+
+  .site-header .brand{
+    width:305px!important;
+    min-width:305px!important;
+    max-width:305px!important;
+    height:78px!important;
+    margin:0!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    gap:10px!important;
+    white-space:nowrap!important;
+    overflow:visible!important;
+    flex:none!important;
+  }
+
+  .site-header .brand img{
+    width:52px!important;
+    height:52px!important;
+    min-width:52px!important;
+    max-width:52px!important;
+    object-fit:contain!important;
+    flex:0 0 52px!important;
+    margin:0!important;
+    padding:0!important;
+  }
+
+  .site-header .brand span{
+    display:inline-block!important;
+    margin:0!important;
+    padding:0!important;
+    font-size:19px!important;
+    line-height:1.1!important;
+    font-weight:800!important;
+    white-space:nowrap!important;
+    flex:0 0 auto!important;
+  }
+
+  .site-header .nav-links{
+    width:100%!important;
+    min-width:0!important;
+    height:78px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:15px!important;
+    flex-wrap:nowrap!important;
+    white-space:nowrap!important;
+    box-sizing:border-box!important;
+  }
+
+  .site-header .nav-links > a{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    height:auto!important;
+    min-width:max-content!important;
+    margin:0!important;
+    padding-top:0!important;
+    padding-bottom:0!important;
+    white-space:nowrap!important;
+    flex:0 0 auto!important;
+    font-size:14px!important;
+    line-height:1.2!important;
+  }
+
+  .site-header .nav-links > a.quote-nav-link,
+  .site-header .nav-links > a.nav-cta{
+    min-height:46px!important;
+    padding:15px 24px!important;
+    box-sizing:border-box!important;
+    border-radius:12px!important;
+    white-space:nowrap!important;
+  }
+
+  /* Normal navigation links stay normal even on their own page. */
+  .site-header .nav-links > a:not(.nav-cta):not(.quote-nav-link),
+  .site-header .nav-links > a.quote-nav-link{
+    color:inherit;
+  }
+
+  .site-header .nav-links > a.quote-nav-link{
+    color:#111!important;
+  }
+
+  .site-header .nav-links > a.nav-cta{
+    color:#111!important;
+  }
+
+  /* Never highlight the Blogs page link. */
+  .site-header .nav-links > a[href="/blog/"]{
+    color:inherit!important;
+    background:transparent!important;
+    box-shadow:none!important;
+    border-color:transparent!important;
+  }
+}
+
+/* Medium desktop: same proportions, smaller typography */
+@media (min-width:901px) and (max-width:1200px){
+  .site-header .nav{
+    width:100%!important;
+    height:74px!important;
+    min-height:74px!important;
+    margin:0!important;
+    padding:0 4%!important;
+    box-sizing:border-box!important;
+    display:grid!important;
+    grid-template-columns:260px minmax(0,1fr)!important;
+    column-gap:14px!important;
+    align-items:center!important;
+  }
+
+  .site-header .brand{
+    width:260px!important;
+    min-width:260px!important;
+    max-width:260px!important;
+    height:74px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    gap:8px!important;
+    white-space:nowrap!important;
+    flex:none!important;
+  }
+
+  .site-header .brand img{
+    width:48px!important;
+    height:48px!important;
+    min-width:48px!important;
+    flex:0 0 48px!important;
+    object-fit:contain!important;
+  }
+
+  .site-header .brand span{
+    font-size:18px!important;
+    line-height:1.1!important;
+    font-weight:800!important;
+    white-space:nowrap!important;
+  }
+
+  .site-header .nav-links{
+    width:100%!important;
+    min-width:0!important;
+    height:74px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:9px!important;
+    flex-wrap:nowrap!important;
+    white-space:nowrap!important;
+  }
+
+  .site-header .nav-links > a{
+    min-width:max-content!important;
+    flex:0 0 auto!important;
+    font-size:12px!important;
+    line-height:1.2!important;
+    white-space:nowrap!important;
+  }
+
+  .site-header .nav-links > a.quote-nav-link,
+  .site-header .nav-links > a.nav-cta{
+    min-height:40px!important;
+    padding:12px 16px!important;
+    border-radius:10px!important;
+  }
+}
+
+/* Mobile/tablet: keep the site's existing menu system. */
 @media (max-width:900px){
-.site-header .nav{width:100%!important;box-sizing:border-box!important}
-.site-header .brand{max-width:calc(100% - 70px)!important;white-space:nowrap!important}
-.site-header .brand span{white-space:nowrap!important}
+  .top-social-bar,
+  .top-social-inner{
+    height:40px;
+    min-height:40px;
+  }
+
+  .top-social-inner{
+    padding:0 12px;
+  }
+
+  .top-social-links{
+    gap:17px;
+  }
+
+  .top-social-links a,
+  .top-social-links svg{
+    width:16px;
+    height:16px;
+    flex-basis:16px;
+  }
+
+  .top-phone{
+    font-size:13px;
+    gap:5px;
+  }
+
+  .top-phone svg{
+    width:15px;
+    height:15px;
+  }
+
+  .site-header .nav-links > a[href="/blog/"]{
+    color:inherit!important;
+    background:transparent!important;
+    box-shadow:none!important;
+  }
 }
 </style>
-
-
-  <style>
-    /* Final Home header brand sizing/alignment */
-    @media (min-width: 1101px) {
-      .site-header .brand {
-        display: inline-flex !important;
-        align-items: center !important;
-        gap: 10px !important;
-        white-space: nowrap !important;
-        height: 100% !important;
-      }
-
-      .site-header .brand img {
-        width: 52px !important;
-        height: 52px !important;
-        flex: 0 0 52px !important;
-        object-fit: contain !important;
-      }
-
-      .site-header .brand span {
-        display: inline-block !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        font-size: 19px !important;
-        line-height: 1.1 !important;
-        font-weight: 800 !important;
-        white-space: nowrap !important;
-        align-self: center !important;
-      }
-    }
-
-    /* Keep the compact desktop version proportional */
-    @media (min-width: 1101px) and (max-width: 1500px) {
-      .site-header .brand {
-        gap: 8px !important;
-      }
-
-      .site-header .brand img {
-        width: 48px !important;
-        height: 48px !important;
-        flex-basis: 48px !important;
-      }
-
-      .site-header .brand span {
-        font-size: 18px !important;
-      }
-    }
-  </style>
 
 </head>
 
@@ -693,8 +851,8 @@
         <a href="/services/">Financial Planning Services</a>
         <a href="/travel-insurance/">Travel Insurance Canada</a>
         <a href="/resources/">Resources</a>
-        <a href="/blog/">Blog</a>
-        <a href="/contact/">Request Financial Guidance</a>
+        <a href="/blog/">Blogs</a>
+        <a href="/contact/" class="quote-nav-link">Get a Quote</a>
         <a href="/book-session/" class="nav-cta">
           Book Consultation
         </a>
