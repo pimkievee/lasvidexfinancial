@@ -197,138 +197,7 @@
       }
     }
   </style>
-
 <style>
-/* =========================================================
-   CLEAN DESKTOP NAVIGATION
-   Matches the corrected Home / About / Services navigation
-   ========================================================= */
-
-@media (min-width: 1101px) {
-
-  .site-header {
-    width: 100%;
-  }
-
-  .site-header .nav {
-    width: 100%;
-    min-height: 78px;
-    height: 78px;
-    padding: 0 3.5%;
-    box-sizing: border-box;
-
-    display: grid;
-    grid-template-columns: 320px minmax(0, 1fr);
-    align-items: center;
-    column-gap: 18px;
-  }
-
-  .site-header .brand {
-    width: 320px;
-    min-width: 320px;
-    max-width: 320px;
-
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    white-space: nowrap;
-    text-decoration: none;
-  }
-
-  .site-header .brand img {
-    width: 52px;
-    height: 52px;
-    min-width: 52px;
-    object-fit: contain;
-    flex: 0 0 52px;
-  }
-
-  .site-header .brand span {
-    display: block;
-    white-space: nowrap;
-    line-height: 1.15;
-  }
-
-  .site-header .nav-links {
-    width: 100%;
-    min-width: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    gap: 14px;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-  }
-
-  .site-header .nav-links > a {
-    display: inline-flex;
-    align-items: center;
-
-    flex: 0 0 auto;
-    min-width: max-content;
-
-    white-space: nowrap;
-    font-size: 14px;
-    line-height: 1.15;
-    text-decoration: none;
-  }
-
-  .site-header .nav-links .nav-cta {
-    flex: 0 0 auto;
-    min-width: max-content;
-
-    padding: 15px 24px;
-    white-space: nowrap;
-    text-align: center;
-
-    border-radius: 10px;
-    background: linear-gradient(135deg, #e2bd58, #ae8126);
-    color: #10213c;
-  }
-
-  .site-header .nav-links .nav-cta:hover {
-    background: linear-gradient(135deg, #d8b34d, #a47720);
-    color: #10213c;
-  }
-}
-
-/* Slightly tighter layout for medium desktop widths */
-@media (min-width: 1101px) and (max-width: 1450px) {
-
-  .site-header .nav {
-    grid-template-columns: 280px minmax(0, 1fr);
-    column-gap: 14px;
-    min-height: 74px;
-    height: 74px;
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-
-  .site-header .brand {
-    width: 280px;
-    min-width: 280px;
-    max-width: 280px;
-  }
-
-  .site-header .nav-links {
-    gap: 12px;
-  }
-
-  .site-header .nav-links > a {
-    font-size: 14px;
-  }
-
-  .site-header .nav-links .nav-cta {
-    padding: 17px 22px;
-  }
-}
-</style>
-
-
-  <style>
     /* =========================================================
        TRAVEL INSURANCE HERO — CENTER THESE THREE ELEMENTS ONLY
        ========================================================= */
@@ -345,6 +214,157 @@
       margin-left: auto !important;
       margin-right: auto !important;
       text-align: center !important;
+    }
+  </style>
+
+
+  <style>
+    /* =========================================================
+       TRAVEL INSURANCE HEADER — SAME AS HOME / ABOUT / SERVICES
+       ========================================================= */
+
+    @media (min-width: 901px) {
+      .site-header .nav {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding-left: 4%;
+        padding-right: 4%;
+        box-sizing: border-box;
+
+        display: grid;
+        grid-template-columns: 305px minmax(0, 1fr);
+        align-items: center;
+        column-gap: 24px;
+      }
+
+      .site-header .brand {
+        width: 305px;
+        min-width: 305px;
+        max-width: 305px;
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        flex: none;
+        white-space: nowrap;
+        overflow: visible;
+      }
+
+      .site-header .brand img {
+        flex: 0 0 auto;
+      }
+
+      .site-header .brand span {
+        display: inline-block;
+        flex: 0 0 auto;
+        white-space: nowrap;
+      }
+
+      .site-header .nav-links {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        gap: 15px;
+        flex: none;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+      }
+
+      .site-header .nav-links > a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        white-space: nowrap;
+        flex: 0 0 auto;
+        min-width: max-content;
+
+        font-size: 14px;
+        line-height: 1.2;
+      }
+
+      .site-header .nav-links .nav-cta {
+        white-space: nowrap;
+        flex: 0 0 auto;
+        min-width: max-content;
+        margin-left: 2px;
+      }
+    }
+
+    @media (min-width: 901px) and (max-width: 1200px) {
+      .site-header .nav {
+        grid-template-columns: 260px minmax(0, 1fr);
+        column-gap: 12px;
+      }
+
+      .site-header .brand {
+        width: 260px;
+        min-width: 260px;
+        max-width: 260px;
+      }
+
+      .site-header .nav-links {
+        gap: 9px;
+      }
+
+      .site-header .nav-links > a {
+        font-size: 12px;
+      }
+    }
+
+    /* Same final brand sizing as the corrected Home / About pages */
+    @media (min-width: 1101px) {
+      .site-header .brand {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+        white-space: nowrap !important;
+        height: 100% !important;
+      }
+
+      .site-header .brand img {
+        width: 52px !important;
+        height: 52px !important;
+        flex: 0 0 52px !important;
+        object-fit: contain !important;
+      }
+
+      .site-header .brand span {
+        display: inline-block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 19px !important;
+        line-height: 1.1 !important;
+        font-weight: 800 !important;
+        white-space: nowrap !important;
+        align-self: center !important;
+      }
+    }
+
+    @media (min-width: 1101px) and (max-width: 1500px) {
+      .site-header .brand {
+        gap: 8px !important;
+      }
+
+      .site-header .brand img {
+        width: 48px !important;
+        height: 48px !important;
+        flex-basis: 48px !important;
+      }
+
+      .site-header .brand span {
+        font-size: 18px !important;
+      }
     }
   </style>
 
