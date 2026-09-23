@@ -250,181 +250,155 @@
     }
   </style>
 
-  <!-- DESKTOP NAVIGATION — MATCH HOME PAGE -->
   <style>
-    @media (min-width: 1101px) {
+    /* =========================================================
+       RESOURCES PAGE HEADER — SAME STANDARD AS HOME / ABOUT /
+       FINANCIAL SERVICES / TRAVEL INSURANCE
+       ========================================================= */
+
+    @media (min-width: 1201px) {
       .site-header .nav {
-        display: grid;
-        grid-template-columns: 290px minmax(0, 1fr);
-        align-items: center;
-        column-gap: 25px;
-        width: 100%;
-        min-height: 100px;
-        padding: 0 4%;
-        box-sizing: border-box;
-      }
-
-      .site-header .brand {
-        width: 290px;
-        min-width: 290px;
-        max-width: 290px;
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        white-space: nowrap;
-      }
-
-      .site-header .brand img {
-        width: 56px;
-        height: 56px;
-        object-fit: contain;
-        flex-shrink: 0;
-      }
-
-      .site-header .brand span {
-        white-space: nowrap;
-      }
-
-      .site-header .nav-links {
-        min-width: 0;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 16px;
-        flex-wrap: nowrap;
-        white-space: nowrap;
-      }
-
-      .site-header .nav-links > a {
-        white-space: nowrap;
-        flex-shrink: 0;
-        font-size: 15px;
-        line-height: 1.2;
-      }
-
-      .site-header .nav-links .nav-cta {
-        white-space: nowrap;
-        flex-shrink: 0;
-        padding: 18px 28px;
-        border-radius: 10px;
-        background: linear-gradient(
-          135deg,
-          #e2bd58,
-          #ae8126
-        );
-        color: #10213c;
-        font-weight: 800;
-        box-shadow: 0 12px 30px rgba(174, 129, 38, 0.18);
-      }
-
-      .site-header .nav-links .nav-cta:hover {
-        background: linear-gradient(
-          135deg,
-          #d8b34d,
-          #a47720
-        );
-        color: #10213c;
-      }
-    }
-  </style>
-
-
-  <!-- FINAL RESOURCE PAGE ALIGNMENT — MATCH HOMEPAGE -->
-  <style>
-    @media (min-width: 1101px) {
-      .site-header .nav {
-        display: grid !important;
-        grid-template-columns: 290px minmax(0, 1fr) !important;
-        align-items: center !important;
-        column-gap: 25px !important;
         width: 100% !important;
-        min-height: 100px !important;
+        max-width: none !important;
+        margin: 0 !important;
+        min-height: 78px !important;
+        height: 78px !important;
         padding: 0 4% !important;
         box-sizing: border-box !important;
+
+        display: grid !important;
+        grid-template-columns: 305px minmax(0, 1fr) !important;
+        align-items: center !important;
+        column-gap: 24px !important;
       }
 
       .site-header .brand {
-        width: 290px !important;
-        min-width: 290px !important;
-        max-width: 290px !important;
+        width: 305px !important;
+        min-width: 305px !important;
+        max-width: 305px !important;
+
         display: inline-flex !important;
         align-items: center !important;
-        gap: 12px !important;
+        gap: 10px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
         white-space: nowrap !important;
+        overflow: visible !important;
+        text-decoration: none !important;
       }
 
       .site-header .brand img {
-        width: 56px !important;
-        height: 56px !important;
+        width: 52px !important;
+        height: 52px !important;
+        min-width: 52px !important;
+        flex: 0 0 52px !important;
         object-fit: contain !important;
-        flex: 0 0 56px !important;
+        display: block !important;
       }
 
       .site-header .brand span {
+        display: inline-block !important;
+        margin: 0 !important;
+        padding: 0 !important;
         white-space: nowrap !important;
-        font-size: 24px !important;
+        font-size: 19px !important;
+        line-height: 1.1 !important;
         font-weight: 800 !important;
-        line-height: 1.2 !important;
       }
 
       .site-header .nav-links {
-        min-width: 0 !important;
         width: 100% !important;
+        min-width: 0 !important;
+
         display: flex !important;
         align-items: center !important;
         justify-content: flex-end !important;
-        gap: 16px !important;
+
+        gap: 15px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+
         flex-wrap: nowrap !important;
         white-space: nowrap !important;
       }
 
       .site-header .nav-links > a {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 !important;
         white-space: nowrap !important;
         flex: 0 0 auto !important;
         min-width: max-content !important;
-        font-size: 15px !important;
+
+        font-size: 14px !important;
         line-height: 1.2 !important;
       }
 
       .site-header .nav-links .nav-cta {
+        padding: 15px 24px !important;
+        margin-left: 2px !important;
+        border-radius: 10px !important;
         white-space: nowrap !important;
         flex: 0 0 auto !important;
         min-width: max-content !important;
-        padding: 18px 28px !important;
-        border-radius: 10px !important;
-        background: linear-gradient(135deg, #e2bd58, #ae8126) !important;
-        color: #10213c !important;
-        font-weight: 800 !important;
-        box-shadow: 0 12px 30px rgba(174, 129, 38, 0.18) !important;
       }
     }
 
-    /* Match the homepage's centered content width and side padding. */
-    .page > .section,
-    .page > .dark-section > .section {
+    /* Prevent merging at smaller desktop/tablet widths.
+       The existing menu button is used instead of squeezing
+       all eight navigation items into one row. */
+    @media (min-width: 901px) and (max-width: 1200px) {
+      .site-header .nav {
+        min-height: 74px !important;
+        height: 74px !important;
+        padding: 0 3% !important;
+        box-sizing: border-box !important;
+      }
+
+      .site-header .brand {
+        gap: 8px !important;
+      }
+
+      .site-header .brand img {
+        width: 48px !important;
+        height: 48px !important;
+        min-width: 48px !important;
+        flex-basis: 48px !important;
+      }
+
+      .site-header .brand span {
+        font-size: 18px !important;
+        white-space: nowrap !important;
+      }
+
+      .site-header .nav-links {
+        gap: 9px !important;
+      }
+
+      .site-header .nav-links > a {
+        font-size: 12px !important;
+      }
+
+      .site-header .nav-links .nav-cta {
+        padding: 12px 16px !important;
+      }
+    }
+
+    /* Resources content uses the same centered page width and side
+       spacing as the other corrected pages. */
+    .resource-hero > .section,
+    .resource-list-section {
       width: 100%;
       max-width: 1180px;
       margin-left: auto;
       margin-right: auto;
       box-sizing: border-box;
-      padding-left: 4%;
-      padding-right: 4%;
     }
 
-    @media (max-width: 700px) {
-      .page > .section,
-      .page > .dark-section > .section {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-    }
-  </style>
-
-
-  <style>
-    /* Resource hero: center the three heading/text elements only */
-    .resource-hero .section {
+    .resource-hero > .section {
       text-align: center;
     }
 
@@ -435,15 +409,18 @@
       margin-left: auto;
       margin-right: auto;
     }
-  </style>
 
-
-  <style>
-    /* Keep the Resources hero eyebrow the same size as before */
     .resource-hero .eyebrow {
       font-size: 16px !important;
       line-height: 1.4 !important;
-      text-align: center !important;
+    }
+
+    @media (max-width: 700px) {
+      .resource-hero > .section,
+      .resource-list-section {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     }
   </style>
 
