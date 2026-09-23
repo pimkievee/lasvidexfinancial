@@ -1229,6 +1229,372 @@
     }
   </style>
 
+
+<style id="lasvidex-universal-header-final">
+/* =========================================================
+   LASVIDEX FINANCIAL — UNIVERSAL HEADER
+   Identical header geometry across all main tabs.
+   ========================================================= */
+
+.top-social-bar{
+  width:100%!important;
+  height:44px!important;
+  min-height:44px!important;
+  background:#18265d!important;
+  color:#fff!important;
+  display:flex!important;
+  align-items:center!important;
+  box-sizing:border-box!important;
+}
+
+.top-social-inner{
+  width:100%!important;
+  height:44px!important;
+  min-height:44px!important;
+  margin:0!important;
+  padding:0 4%!important;
+  box-sizing:border-box!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+}
+
+.top-social-links{
+  display:flex!important;
+  align-items:center!important;
+  gap:28px!important;
+  flex:0 0 auto!important;
+}
+
+.top-social-links a{
+  width:18px!important;
+  height:18px!important;
+  min-width:18px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  color:#fff!important;
+  text-decoration:none!important;
+  flex:0 0 18px!important;
+}
+
+.top-social-links svg{
+  width:18px!important;
+  height:18px!important;
+  display:block!important;
+  fill:currentColor!important;
+}
+
+.top-phone{
+  display:inline-flex!important;
+  align-items:center!important;
+  gap:8px!important;
+  color:#fff!important;
+  text-decoration:none!important;
+  font-size:15px!important;
+  font-weight:600!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+  flex:0 0 auto!important;
+}
+
+.top-phone svg{
+  width:18px!important;
+  height:18px!important;
+  fill:currentColor!important;
+  display:block!important;
+}
+
+.site-header{
+  width:100%!important;
+  background:#fff!important;
+  border-bottom:1px solid #e5e7eb!important;
+  position:relative!important;
+  z-index:20!important;
+}
+
+/* Large desktop: exactly the same geometry as the corrected main tabs. */
+@media (min-width:1201px){
+  .site-header .nav{
+    width:100%!important;
+    height:78px!important;
+    min-height:78px!important;
+    margin:0!important;
+    padding:0 4%!important;
+    box-sizing:border-box!important;
+    display:grid!important;
+    grid-template-columns:305px minmax(0,1fr)!important;
+    column-gap:24px!important;
+    align-items:center!important;
+  }
+
+  .site-header .brand{
+    width:305px!important;
+    min-width:305px!important;
+    max-width:305px!important;
+    height:78px!important;
+    margin:0!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    gap:10px!important;
+    white-space:nowrap!important;
+    overflow:visible!important;
+    flex:none!important;
+  }
+
+  .site-header .brand img{
+    width:52px!important;
+    height:52px!important;
+    min-width:52px!important;
+    max-width:52px!important;
+    flex:0 0 52px!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    display:block!important;
+    margin:0!important;
+    padding:0!important;
+  }
+
+  .site-header .brand span{
+    display:inline-block!important;
+    width:auto!important;
+    margin:0!important;
+    padding:0!important;
+    color:#052d5f!important;
+    font-family:"Inter",sans-serif!important;
+    font-size:19px!important;
+    font-weight:800!important;
+    line-height:1.1!important;
+    white-space:nowrap!important;
+  }
+
+  .site-header .nav-links{
+    width:100%!important;
+    min-width:0!important;
+    height:78px!important;
+    margin:0!important;
+    padding:0!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:15px!important;
+    flex-wrap:nowrap!important;
+    white-space:nowrap!important;
+    overflow:visible!important;
+  }
+
+  .site-header .nav-links > a{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:auto!important;
+    min-width:max-content!important;
+    min-height:0!important;
+    margin:0!important;
+    padding-top:0!important;
+    padding-bottom:0!important;
+    flex:0 0 auto!important;
+    color:#17243b!important;
+    font-family:"Inter",sans-serif!important;
+    font-size:14px!important;
+    font-weight:600!important;
+    line-height:1.2!important;
+    white-space:nowrap!important;
+    text-decoration:none!important;
+    background:transparent!important;
+    box-shadow:none!important;
+  }
+
+  /* The active Blogs tab stays visually identical to the other text tabs. */
+  .site-header .nav-links > a[href="/blog/"],
+  .site-header .nav-links > a[aria-current="page"]{
+    color:#17243b!important;
+    font-weight:600!important;
+    background:transparent!important;
+    box-shadow:none!important;
+  }
+
+  /* Only Get a Quote and Book Consultation are gold buttons. */
+  .site-header .nav-links > a.quote-nav-link,
+  .site-header .nav-links > a.nav-cta{
+    min-height:46px!important;
+    padding:15px 24px!important;
+    border-radius:10px!important;
+    background:linear-gradient(135deg,#e2bd58,#ae8126)!important;
+    color:#10213c!important;
+    font-weight:800!important;
+    white-space:nowrap!important;
+    box-shadow:0 12px 30px rgba(174,129,38,.18)!important;
+  }
+}
+
+/* Medium desktop/tablet: prevent header merging and keep geometry fixed. */
+@media (min-width:901px) and (max-width:1200px){
+  .site-header .nav{
+    width:100%!important;
+    height:74px!important;
+    min-height:74px!important;
+    margin:0!important;
+    padding:0 4%!important;
+    box-sizing:border-box!important;
+    display:grid!important;
+    grid-template-columns:305px minmax(0,1fr)!important;
+    column-gap:18px!important;
+    align-items:center!important;
+  }
+
+  .site-header .brand{
+    width:305px!important;
+    min-width:305px!important;
+    max-width:305px!important;
+    height:74px!important;
+    gap:9px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    white-space:nowrap!important;
+  }
+
+  .site-header .brand img{
+    width:48px!important;
+    height:48px!important;
+    min-width:48px!important;
+    max-width:48px!important;
+    flex:0 0 48px!important;
+    object-fit:contain!important;
+  }
+
+  .site-header .brand span{
+    font-size:18px!important;
+    line-height:1.1!important;
+    font-weight:800!important;
+    white-space:nowrap!important;
+  }
+
+  .site-header .nav-links{
+    width:100%!important;
+    min-width:0!important;
+    height:74px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:9px!important;
+    flex-wrap:nowrap!important;
+    white-space:nowrap!important;
+    margin:0!important;
+    padding:0!important;
+  }
+
+  .site-header .nav-links > a{
+    min-width:max-content!important;
+    flex:0 0 auto!important;
+    font-size:12px!important;
+    line-height:1.2!important;
+    white-space:nowrap!important;
+  }
+
+  .site-header .nav-links > a[href="/blog/"],
+  .site-header .nav-links > a[aria-current="page"]{
+    background:transparent!important;
+    color:#17243b!important;
+    font-weight:600!important;
+    box-shadow:none!important;
+  }
+
+  .site-header .nav-links > a.quote-nav-link,
+  .site-header .nav-links > a.nav-cta{
+    min-height:42px!important;
+    padding:12px 16px!important;
+    border-radius:10px!important;
+    background:linear-gradient(135deg,#e2bd58,#ae8126)!important;
+    color:#10213c!important;
+  }
+}
+
+/* Mobile: same compact header proportions as the other corrected pages. */
+@media (max-width:820px){
+  .top-social-bar,
+  .top-social-inner{
+    height:40px!important;
+    min-height:40px!important;
+  }
+
+  .top-social-inner{
+    padding:0 12px!important;
+  }
+
+  .top-social-links{
+    gap:17px!important;
+  }
+
+  .top-social-links a,
+  .top-social-links svg{
+    width:16px!important;
+    height:16px!important;
+    min-width:16px!important;
+    flex-basis:16px!important;
+  }
+
+  .top-phone{
+    font-size:13px!important;
+    gap:5px!important;
+  }
+
+  .top-phone svg{
+    width:15px!important;
+    height:15px!important;
+  }
+
+  .site-header .nav{
+    width:100%!important;
+    min-height:78px!important;
+    height:78px!important;
+    padding:0 20px!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    position:relative!important;
+  }
+
+  .site-header .brand{
+    width:auto!important;
+    min-width:0!important;
+    max-width:calc(100% - 60px)!important;
+    height:78px!important;
+    gap:8px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    white-space:nowrap!important;
+  }
+
+  .site-header .brand img{
+    width:48px!important;
+    height:48px!important;
+    min-width:48px!important;
+    max-width:48px!important;
+    flex:0 0 48px!important;
+    object-fit:contain!important;
+  }
+
+  .site-header .brand span{
+    font-size:20px!important;
+    line-height:1.1!important;
+    white-space:nowrap!important;
+  }
+
+  .site-header .nav-links > a[href="/blog/"],
+  .site-header .nav-links > a[aria-current="page"]{
+    background:transparent!important;
+    color:#17243b!important;
+    font-weight:600!important;
+    box-shadow:none!important;
+  }
+}
+</style>
+
 </head>
 
 <body>
@@ -1380,12 +1746,7 @@
           Resources
         </a>
 
-        <a
-          href="/blog/"
-          aria-current="page"
-        >
-          Blogs
-        </a>
+        <a href="/blog/" aria-current="page">Blogs</a>
 
         <a href="/contact/" class="quote-nav-link">
           Get a Quote
