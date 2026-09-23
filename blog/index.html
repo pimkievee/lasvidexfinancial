@@ -1038,9 +1038,10 @@
 
   </style>
 
-  <!-- FINAL BLOG HEADER FIX -->
+  <!-- FINAL BLOG HEADER ALIGNMENT -->
   <style>
-    @media (min-width: 821px) {
+    /* Same header proportions used on the other main site tabs */
+    @media (min-width: 1201px) {
       .site-header .nav {
         width: 100% !important;
         min-height: 78px !important;
@@ -1048,21 +1049,20 @@
         padding: 0 4% !important;
         margin: 0 !important;
         box-sizing: border-box !important;
-        display: flex !important;
+        display: grid !important;
+        grid-template-columns: 305px minmax(0, 1fr) !important;
         align-items: center !important;
-        justify-content: flex-start !important;
-        gap: 0 !important;
+        column-gap: 24px !important;
       }
 
       .site-header .brand {
-        flex: 0 0 500px !important;
-        width: 500px !important;
-        min-width: 500px !important;
-        max-width: 500px !important;
+        width: 305px !important;
+        min-width: 305px !important;
+        max-width: 305px !important;
         height: 78px !important;
         display: inline-flex !important;
         align-items: center !important;
-        gap: 12px !important;
+        gap: 10px !important;
         margin: 0 !important;
         padding: 0 !important;
         overflow: visible !important;
@@ -1072,11 +1072,11 @@
 
       .site-header .brand img {
         display: block !important;
-        width: 56px !important;
-        height: 56px !important;
-        min-width: 56px !important;
-        max-width: 56px !important;
-        flex: 0 0 56px !important;
+        width: 52px !important;
+        height: 52px !important;
+        min-width: 52px !important;
+        max-width: 52px !important;
+        flex: 0 0 52px !important;
         object-fit: contain !important;
         object-position: center !important;
       }
@@ -1088,20 +1088,19 @@
         padding: 0 !important;
         color: #052d5f !important;
         font-family: "Inter", sans-serif !important;
-        font-size: 24px !important;
+        font-size: 19px !important;
         font-weight: 800 !important;
         line-height: 1.1 !important;
         white-space: nowrap !important;
       }
 
       .site-header .nav-links {
-        flex: 1 1 auto !important;
-        width: auto !important;
         min-width: 0 !important;
+        width: 100% !important;
         display: flex !important;
         align-items: center !important;
         justify-content: flex-end !important;
-        gap: 16px !important;
+        gap: 15px !important;
         margin: 0 !important;
         padding: 0 !important;
         flex-wrap: nowrap !important;
@@ -1119,6 +1118,7 @@
         margin: 0 !important;
         padding-top: 0 !important;
         padding-bottom: 0 !important;
+        color: #17243b !important;
         font-family: "Inter", sans-serif !important;
         font-size: 14px !important;
         font-weight: 600 !important;
@@ -1127,9 +1127,10 @@
         text-decoration: none !important;
       }
 
+      /* Blogs stays exactly like the other navigation tabs when it is open */
       .site-header .nav-links > a[aria-current="page"] {
-        color: #a97e22 !important;
-        font-weight: 800 !important;
+        color: #17243b !important;
+        font-weight: 600 !important;
       }
 
       .site-header .nav-links > a.quote-nav-link,
@@ -1144,27 +1145,55 @@
       }
     }
 
-    @media (min-width: 821px) and (max-width: 1500px) {
+    @media (min-width: 901px) and (max-width: 1200px) {
+      .site-header .nav {
+        width: 100% !important;
+        min-height: 74px !important;
+        height: 74px !important;
+        padding: 0 4% !important;
+        box-sizing: border-box !important;
+        display: grid !important;
+        grid-template-columns: 305px minmax(0, 1fr) !important;
+        align-items: center !important;
+        column-gap: 18px !important;
+      }
+
       .site-header .brand {
-        flex-basis: 390px !important;
-        width: 390px !important;
-        min-width: 390px !important;
-        max-width: 390px !important;
+        width: 305px !important;
+        min-width: 305px !important;
+        max-width: 305px !important;
+        height: 74px !important;
+        gap: 9px !important;
+      }
+
+      .site-header .brand img {
+        width: 48px !important;
+        height: 48px !important;
+        min-width: 48px !important;
+        max-width: 48px !important;
       }
 
       .site-header .brand span {
-        font-size: 21px !important;
+        font-size: 18px !important;
       }
+
       .site-header .nav-links {
-        gap: 10px !important;
+        gap: 9px !important;
       }
+
       .site-header .nav-links > a {
         font-size: 12px !important;
       }
+
+      .site-header .nav-links > a[aria-current="page"] {
+        color: #17243b !important;
+        font-weight: 600 !important;
+      }
+
       .site-header .nav-links > a.quote-nav-link,
       .site-header .nav-links > a.nav-cta {
-        padding: 12px 16px !important;
         min-height: 42px !important;
+        padding: 12px 16px !important;
       }
     }
 
