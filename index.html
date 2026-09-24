@@ -819,6 +819,81 @@
   }
 </style>
 
+
+<style id="footer-reference-layout">
+/* =========================================================
+   FOOTER — MATCH REFERENCE SIZE / WIDTH / BUTTON SPACING
+   ========================================================= */
+
+.footer .footer-inner{
+  width:calc(100% - 40px)!important;
+  max-width:1475px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  box-sizing:border-box!important;
+  gap:45px!important;
+}
+
+/* Keep the footer compact while preserving all existing content. */
+.footer .footer-actions{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  gap:15px!important;
+  margin-top:22px!important;
+  margin-bottom:18px!important;
+}
+
+.footer .footer-actions .footer-cta{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  box-sizing:border-box!important;
+  padding:0 18px!important;
+  border-radius:10px!important;
+  min-height:62px!important;
+  line-height:1.2!important;
+  white-space:nowrap!important;
+}
+
+.footer .footer-actions .footer-quote{
+  width:160px!important;
+  min-height:64px!important;
+}
+
+.footer .footer-actions .footer-book{
+  width:227px!important;
+  min-height:62px!important;
+}
+
+/* Reference-style location text. */
+.footer .footer-contact > span{
+  line-height:1.45!important;
+}
+
+/* Keep the footer content slightly narrower on large screens. */
+@media (min-width:901px){
+  .footer .footer-inner{
+    padding-left:0!important;
+    padding-right:0!important;
+  }
+}
+
+@media (max-width:900px){
+  .footer .footer-inner{
+    width:calc(100% - 32px)!important;
+  }
+
+  .footer .footer-actions .footer-quote{
+    width:160px!important;
+  }
+
+  .footer .footer-actions .footer-book{
+    width:227px!important;
+  }
+}
+</style>
+
 </head>
 
 <body>
@@ -1669,7 +1744,7 @@
                 <path d="M12 2.25a7 7 0 0 0-7 7c0 5.25 7 12.5 7 12.5s7-7.25 7-12.5a7 7 0 0 0-7-7Zm0 9.6a2.6 2.6 0 1 1 0-5.2 2.6 2.6 0 0 1 0 5.2Z"/>
               </svg>
             </span>
-            Serving clients across Canada
+            Based in Whitby, Ontario. Serving clients across Canada.
           </span>
 
         </div>
@@ -1680,6 +1755,22 @@
       <div class="footer-column">
 
         <h3>Connect</h3>
+
+        <div class="footer-actions">
+          <a
+            class="footer-cta footer-quote"
+            href="/contact/"
+          >
+            Get a Quote
+          </a>
+
+          <a
+            class="footer-cta footer-book"
+            href="/book-session/"
+          >
+            Book Consultation
+          </a>
+        </div>
 
         <div class="social-icons">
 
@@ -1757,22 +1848,6 @@
             <span>LinkedIn</span>
           </a>
 
-        </div>
-
-        <div class="footer-actions">
-          <a
-            class="footer-cta footer-quote"
-            href="/contact/"
-          >
-            Get a Quote
-          </a>
-
-          <a
-            class="footer-cta footer-book"
-            href="/book-session/"
-          >
-            Book Consultation
-          </a>
         </div>
 
       </div>
