@@ -775,6 +775,50 @@
   }
 </style>
 
+
+<style id="footer-two-gold-buttons">
+  .footer-actions{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:14px;
+    margin-top:22px;
+  }
+
+  .footer-actions .footer-cta{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:62px;
+    padding:0 22px;
+    box-sizing:border-box;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:800;
+    line-height:1.2;
+    white-space:nowrap;
+  }
+
+  .footer-actions .footer-quote,
+  .footer-actions .footer-book{
+    background:linear-gradient(135deg,#e0bd63 0%,#b88b2b 100%);
+    color:#111;
+    box-shadow:0 10px 25px rgba(184,139,43,.16);
+  }
+
+  .footer-actions .footer-quote:hover,
+  .footer-actions .footer-book:hover{
+    background:linear-gradient(135deg,#e0bd63 0%,#b88b2b 100%);
+    color:#111;
+  }
+
+  @media (max-width:700px){
+    .footer-actions{
+      align-items:flex-start;
+    }
+  }
+</style>
+
 </head>
 
 <body>
@@ -1715,12 +1759,21 @@
 
         </div>
 
-        <a
-          class="footer-cta"
-          href="/book-session/"
-        >
-          Book Consultation
-        </a>
+        <div class="footer-actions">
+          <a
+            class="footer-cta footer-quote"
+            href="/contact/"
+          >
+            Get a Quote
+          </a>
+
+          <a
+            class="footer-cta footer-book"
+            href="/book-session/"
+          >
+            Book Consultation
+          </a>
+        </div>
 
       </div>
 
