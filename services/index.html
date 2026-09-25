@@ -574,6 +574,11 @@
 
 
 <style id="investment-planning-expand">
+  /* Keep each service card at its own height so opening Tab 1 does not stretch Tab 2 or any other card. */
+  .service-grid {
+    align-items: start !important;
+  }
+
   /* Only the first Financial Services card is expandable. */
   .service-card-expandable {
     cursor: pointer;
