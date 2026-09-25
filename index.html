@@ -1585,10 +1585,16 @@
           </p>
         </a>
 
-        <a class="card" href="/services/">
+        <a
+          class="card"
+          href="#insurance-protection-details"
+          data-insurance-protection-card
+          aria-haspopup="dialog"
+          aria-controls="insurance-protection-details"
+        >
           <span>02</span>
           <h3>
-            Retirement &amp; Tax Efficient Planning
+            Insurance Protection Strategies
           </h3>
           <p>
             Structure RRSP, TFSA, FHSA, retirement income,
@@ -1596,10 +1602,16 @@
           </p>
         </a>
 
-        <a class="card" href="/services/">
+        <a
+          class="card"
+          href="#retirement-planning-details"
+          data-retirement-planning-card
+          aria-haspopup="dialog"
+          aria-controls="retirement-planning-details"
+        >
           <span>03</span>
           <h3>
-            Estate &amp; Legacy Planning
+            Retirement Planning and tax minimization
           </h3>
           <p>
             Plan intentionally for beneficiaries, children,
@@ -1776,6 +1788,155 @@
           Call +1 (647) 466-9921
         </a>
       </div>
+    </div>
+  </div>
+
+  <!-- INSURANCE PROTECTION DETAILS -->
+  <div
+    class="investment-modal"
+    id="insurance-protection-details"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="insurance-protection-title"
+    aria-hidden="true"
+  >
+    <div class="investment-modal-panel" role="document">
+      <button
+        type="button"
+        class="investment-modal-close"
+        data-insurance-modal-close
+        aria-label="Close Insurance Protection details"
+      >
+        &times;
+      </button>
+
+      <h2 id="insurance-protection-title">
+        Insurance Protection Strategies
+      </h2>
+
+      <p>
+        Insurance protection strategies include disability, critical illness, life and business insurance in
+        a coordinated plan. It primarily focuses on securing your family income from
+        unexpected losses.
+      </p>
+
+      <p>
+        Rather than relying on
+        a uniform strategy, we at Lesvidex Financial focus on customize strategies to
+        help our clients.
+      </p>
+
+      <h3>Business Insurance protection for corporate professionals in Canada</h3>
+
+      <p>
+        For corporate
+        professionals, personal financial security becomes less vital than business
+        financial protection. Lesvidex Financial is getting you covered with our
+        personal insurance plans alongside with corporate plans.
+      </p>
+
+      <p>
+        Buy-sell agreement funding,
+      </p>
+
+      <p>
+        Expense insurance
+      </p>
+
+      <p>
+        Business overhead
+      </p>
+
+      <p>
+        We will keep it all
+        secure from the unexpected.
+      </p>
+
+      <h3>Coordinated Protection Strategy with Lesvidex Financial.</h3>
+
+      <p>
+        At Lesvidex Financial,
+        Insurance protection is integrated into the same strategy that shapes your
+        investment strategies and plans.
+      </p>
+
+      <p>
+        We will guide you toward long-term financial improvement.
+      </p>
+    </div>
+  </div>
+
+  <!-- RETIREMENT PLANNING DETAILS -->
+  <div
+    class="investment-modal"
+    id="retirement-planning-details"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="retirement-planning-title"
+    aria-hidden="true"
+  >
+    <div class="investment-modal-panel" role="document">
+      <button
+        type="button"
+        class="investment-modal-close"
+        data-retirement-modal-close
+        aria-label="Close Retirement Planning details"
+      >
+        &times;
+      </button>
+
+      <h2 id="retirement-planning-title">
+        Retirement Planning and tax minimization
+      </h2>
+
+      <p>
+        A retirement plan is
+        more than just saving. It’s a process of structuring your RRSP, TFSA, FHSA, and
+        pension income into coordinated withdrawals so you can achieve the financial independence
+        you want in retirement while minimizing tax impact.
+      </p>
+
+      <p>
+        Lesvidex will help you
+        decide on retained earnings, corporate-held investments, and how to manage the
+        mix of salary and dividends, which directly affects personal and corporate tax
+        liabilities.
+      </p>
+
+      <h3>Building your retirement strategy with Lasvidex Financial</h3>
+
+      <p>
+        A practical and
+        professional financial plan always responds to these questions,
+      </p>
+
+      <p>
+        How much do you need?
+      </p>
+
+      <p>
+        How do you get there
+        tax-efficiently? And
+      </p>
+
+      <p>
+        How will you protect
+        and maintain the wealth?
+      </p>
+
+      <p>
+        We are here to
+        determine your retirement income gap, and optimize contribution strategies(RRSP
+        vs TFSA vs corporate investment). Lasvidex will structure your withdrawals in
+        retirement to manimize tax drag and avoid OAS.
+      </p>
+
+      <h3>Retirement Planning for business owners</h3>
+
+      <p>
+        Businesses usually
+        overlap personal and corporate strategies. By using tools like Individual pension plans (IPPs), Insurance-based strategies, and corporate-owned investments, we will assist you in extracting wealth from a corporation efficiently.
+      </p>
     </div>
   </div>
 
@@ -2310,44 +2471,84 @@
 
 
 
-  <script id="investment-planning-modal-script">
+  <script id="planning-details-modal-script">
     (function () {
-      const card = document.querySelector('[data-investment-planning-card]');
-      const modal = document.getElementById('investment-planning-details');
-      const closeButton = document.querySelector('[data-investment-modal-close]');
+      const configs = [
+        {
+          card: '[data-investment-planning-card]',
+          modal: '#investment-planning-details',
+          close: '[data-investment-modal-close]'
+        },
+        {
+          card: '[data-insurance-protection-card]',
+          modal: '#insurance-protection-details',
+          close: '[data-insurance-modal-close]'
+        },
+        {
+          card: '[data-retirement-planning-card]',
+          modal: '#retirement-planning-details',
+          close: '[data-retirement-modal-close]'
+        }
+      ];
 
-      if (!card || !modal || !closeButton) return;
+      const entries = configs
+        .map(function (config) {
+          const card = document.querySelector(config.card);
+          const modal = document.querySelector(config.modal);
+          const closeButton = document.querySelector(config.close);
+          return card && modal && closeButton ? { card, modal, closeButton } : null;
+        })
+        .filter(Boolean);
+
+      if (!entries.length) return;
 
       let lastFocusedElement = null;
 
-      function openInvestmentModal(event) {
-        if (event) event.preventDefault();
-        lastFocusedElement = document.activeElement;
-        modal.classList.add('is-open');
-        modal.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden';
-        closeButton.focus();
-      }
-
-      function closeInvestmentModal() {
-        modal.classList.remove('is-open');
-        modal.setAttribute('aria-hidden', 'true');
+      function closeAllModals() {
+        entries.forEach(function (entry) {
+          entry.modal.classList.remove('is-open');
+          entry.modal.setAttribute('aria-hidden', 'true');
+        });
         document.body.style.overflow = '';
-        if (lastFocusedElement) lastFocusedElement.focus();
       }
 
-      card.addEventListener('click', openInvestmentModal);
-      closeButton.addEventListener('click', closeInvestmentModal);
+      function openModal(entry, event) {
+        if (event) event.preventDefault();
+        closeAllModals();
+        lastFocusedElement = document.activeElement;
+        entry.modal.classList.add('is-open');
+        entry.modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        entry.closeButton.focus();
+      }
 
-      modal.addEventListener('click', function (event) {
-        if (event.target === modal) {
-          closeInvestmentModal();
-        }
+      entries.forEach(function (entry) {
+        entry.card.addEventListener('click', function (event) {
+          openModal(entry, event);
+        });
+
+        entry.closeButton.addEventListener('click', function () {
+          closeAllModals();
+          if (lastFocusedElement) lastFocusedElement.focus();
+        });
+
+        entry.modal.addEventListener('click', function (event) {
+          if (event.target === entry.modal) {
+            closeAllModals();
+            if (lastFocusedElement) lastFocusedElement.focus();
+          }
+        });
       });
 
       document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape' && modal.classList.contains('is-open')) {
-          closeInvestmentModal();
+        if (event.key === 'Escape') {
+          const openModal = entries.find(function (entry) {
+            return entry.modal.classList.contains('is-open');
+          });
+          if (openModal) {
+            closeAllModals();
+            if (lastFocusedElement) lastFocusedElement.focus();
+          }
         }
       });
     })();
