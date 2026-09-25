@@ -835,7 +835,9 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card service-card-expandable" id="insurance-protection-card"
+           role="button" tabindex="0" aria-expanded="false"
+           aria-controls="insurance-protection-details">
         <span>02</span>
         <h3>Insurance Protection Strategies</h3>
         <p>
@@ -843,6 +845,41 @@
           solutions to help protect income, family obligations, mortgages,
           and business risk.
         </p>
+
+        <div class="service-card-details" id="insurance-protection-details" hidden>
+          <h4>Insurance protection strategies</h4>
+          <p>
+            Insurance protection strategies include disability, critical illness, life and business insurance in a coordinated plan. It primarily focuses on securing your family income from unexpected losses.
+          </p>
+
+          <p>
+            Rather than relying on a uniform strategy, we at Lesvidex Financial focus on customize strategies to help our clients.
+          </p>
+
+          <h4>Business Insurance protection for corporate professionals in Canada</h4>
+          <p>
+            For corporate professionals, personal financial security becomes less vital than business financial protection. Lesvidex Financial is getting you covered with our personal insurance plans alongside with corporate plans.
+          </p>
+
+          <ul>
+            <li>Buy-sell agreement funding</li>
+            <li>Expense insurance</li>
+            <li>Business overhead</li>
+          </ul>
+
+          <p>
+            We will keep it all secure from the unexpected.
+          </p>
+
+          <h4>Coordinated Protection Strategy with Lesvidex Financial.</h4>
+          <p>
+            At Lesvidex Financial, Insurance protection is integrated into the same strategy that shapes your investment strategies and plans.
+          </p>
+
+          <p>
+            We will guide you toward long-term financial improvement.
+          </p>
+        </div>
       </div>
 
       <div class="card">
@@ -1898,26 +1935,48 @@
 </footer>
 
 
-<script id="investment-planning-expand-script">
+<script id="service-card-expand-script">
   (function () {
-    const card = document.getElementById("investment-planning-card");
-    const details = document.getElementById("investment-planning-details");
+    const cards = Array.from(document.querySelectorAll(".service-card-expandable"));
 
-    if (!card || !details) return;
+    if (!cards.length) return;
 
-    function toggleInvestmentPlanning() {
-      const isOpen = card.getAttribute("aria-expanded") === "true";
-      card.setAttribute("aria-expanded", String(!isOpen));
-      details.hidden = isOpen;
+    function closeOtherCards(activeCard) {
+      cards.forEach(function (card) {
+        if (card === activeCard) return;
+        const details = card.querySelector(".service-card-details");
+        card.setAttribute("aria-expanded", "false");
+        if (details) details.hidden = true;
+      });
     }
 
-    card.addEventListener("click", toggleInvestmentPlanning);
+    function toggleCard(card) {
+      const details = card.querySelector(".service-card-details");
+      if (!details) return;
 
-    card.addEventListener("keydown", function (event) {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        toggleInvestmentPlanning();
+      const isOpen = card.getAttribute("aria-expanded") === "true";
+
+      if (isOpen) {
+        card.setAttribute("aria-expanded", "false");
+        details.hidden = true;
+      } else {
+        closeOtherCards(card);
+        card.setAttribute("aria-expanded", "true");
+        details.hidden = false;
       }
+    }
+
+    cards.forEach(function (card) {
+      card.addEventListener("click", function () {
+        toggleCard(card);
+      });
+
+      card.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          toggleCard(card);
+        }
+      });
     });
   })();
 </script>
