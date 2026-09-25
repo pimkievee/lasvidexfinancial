@@ -572,78 +572,6 @@
 }
 </style>
 
-
-<style id="investment-planning-expand">
-  /* Keep each service card at its own height so opening Tab 1 does not stretch Tab 2 or any other card. */
-  .service-grid {
-    align-items: start !important;
-  }
-
-  /* Keep every card independent: only the opened card grows. */
-  .service-grid > .card {
-    align-self: start !important;
-    height: fit-content !important;
-    min-height: 0 !important;
-  }
-
-  .service-grid > .service-card-expandable {
-    height: fit-content !important;
-    min-height: 0 !important;
-  }
-
-  /* Expandable Financial Services cards. */
-  .service-card-expandable {
-    cursor: pointer;
-  }
-
-  .service-card-expandable:focus-visible {
-    outline: 3px solid #e2bd58;
-    outline-offset: 3px;
-  }
-
-  .service-card-details {
-    margin-top: 24px;
-    padding-top: 24px;
-    border-top: 1px solid #e5e7eb;
-    text-align: left;
-  }
-
-  .service-card-details h4 {
-    margin: 0 0 12px;
-    color: #062f61;
-    font-family: "Playfair Display", serif;
-    font-size: 24px;
-    line-height: 1.25;
-  }
-
-  .service-card-details h5 {
-    margin: 24px 0 8px;
-    color: #062f61;
-    font-size: 18px;
-    line-height: 1.35;
-    font-weight: 800;
-  }
-
-  .service-card-details p {
-    margin: 0 0 16px;
-    color: #667085;
-    font-size: 15px;
-    line-height: 1.75;
-  }
-
-  .service-card-details ul {
-    margin: 0 0 16px;
-    padding-left: 22px;
-    color: #667085;
-    font-size: 15px;
-    line-height: 1.8;
-  }
-
-  .service-card-details li {
-    margin: 2px 0;
-  }
-</style>
-
 </head>
 
 <body>
@@ -791,53 +719,16 @@
 
     <div class="cards service-grid">
 
-      <div class="card service-card-expandable" id="investment-planning-card"
-           role="button" tabindex="0" aria-expanded="false"
-           aria-controls="investment-planning-details">
+      <div class="card">
         <span>01</span>
-        <h3>What is investment planning and wealth building?</h3>
+        <h3>Investment Planning &amp; Wealth Building</h3>
         <p>
           Create a coordinated strategy for disciplined saving, asset growth,
           portfolio direction, and long-term financial planning.
         </p>
-
-        <div class="service-card-details" id="investment-planning-details" hidden>
-          <h4>What is investment planning and wealth building?</h4>
-          <p>
-            Investment planning and wealth building involve evaluating and developing financial strategies based on your goals, financial position, investment needs, and long-term priorities. Lasvidex Financial provides personalised financial planning and investment services, incorporating retirement planning, portfolio management, tax optimisation, estate planning, and financial advisory.
-          </p>
-
-          <h4>Here is what we are going to contribute to your success</h4>
-
-          <h5>Mapping and capital allocation</h5>
-          <p>
-            Identification of short-term and long-term goals to determine the pathway. Lasvidex Financial will connect you to an expert who will help you understand your fiscal position for smarter financial decisions.
-          </p>
-
-          <h5>Our Approach to Building Wealth</h5>
-          <p>
-            Lasvidex Financial always prioritize its clients and their distinct needs. Therefore, we have tailored strategies for our clients. Our team will conduct a detailed financial assessment to identify the opportunities and potential challenges.
-          </p>
-
-          <h5>What does Lasvidex Financial offer?</h5>
-          <ul>
-            <li>Retirement Planning</li>
-            <li>Portfolio Management</li>
-            <li>Tax-Optimization</li>
-            <li>Estate Planning</li>
-            <li>Financial Advisory</li>
-          </ul>
-
-          <h5>Why Choose Lasvidex Financial?</h5>
-          <p>
-            Years of experience in this industry, commitment to transparency, integrity and client success. We are dedicated to providing roadmaps to financial independence to our clients. Our proactive approach means constant monitoring of market trends and adjustments to investment plans to optimize future security.
-          </p>
-        </div>
       </div>
 
-      <div class="card service-card-expandable" id="insurance-protection-card"
-           role="button" tabindex="0" aria-expanded="false"
-           aria-controls="insurance-protection-details">
+      <div class="card">
         <span>02</span>
         <h3>Insurance Protection Strategies</h3>
         <p>
@@ -845,83 +736,16 @@
           solutions to help protect income, family obligations, mortgages,
           and business risk.
         </p>
-
-        <div class="service-card-details" id="insurance-protection-details" hidden>
-          <h4>Insurance protection strategies</h4>
-          <p>
-            Insurance protection strategies include disability, critical illness, life and business insurance in a coordinated plan. It primarily focuses on securing your family income from unexpected losses.
-          </p>
-
-          <p>
-            Rather than relying on a uniform strategy, we at Lesvidex Financial focus on customize strategies to help our clients.
-          </p>
-
-          <h4>Business Insurance protection for corporate professionals in Canada</h4>
-          <p>
-            For corporate professionals, personal financial security becomes less vital than business financial protection. Lesvidex Financial is getting you covered with our personal insurance plans alongside with corporate plans.
-          </p>
-
-          <ul>
-            <li>Buy-sell agreement funding</li>
-            <li>Expense insurance</li>
-            <li>Business overhead</li>
-          </ul>
-
-          <p>
-            We will keep it all secure from the unexpected.
-          </p>
-
-          <h4>Coordinated Protection Strategy with Lesvidex Financial.</h4>
-          <p>
-            At Lesvidex Financial, Insurance protection is integrated into the same strategy that shapes your investment strategies and plans.
-          </p>
-
-          <p>
-            We will guide you toward long-term financial improvement.
-          </p>
-        </div>
       </div>
 
-      <div class="card service-card-expandable" id="retirement-tax-card"
-           role="button" tabindex="0" aria-expanded="false"
-           aria-controls="retirement-tax-details">
+      <div class="card">
         <span>03</span>
-        <h3>Retirement Planning and tax minimization</h3>
+        <h3>Retirement Planning</h3>
         <p>
           Plan for retirement income, wealth preservation, tax efficient
           decisions, and a future lifestyle supported by intentional
           planning today.
         </p>
-
-        <div class="service-card-details" id="retirement-tax-details" hidden>
-          <p>
-            A retirement plan is more than just saving. It’s a process of structuring your RRSP, TFSA, FHSA, and pension income into coordinated withdrawals so you can achieve the financial independence you want in retirement while minimizing tax impact.
-          </p>
-
-          <p>
-            Lesvidex will help you decide on retained earnings, corporate-held investments, and how to manage the mix of salary and dividends, which directly affects personal and corporate tax liabilities.
-          </p>
-
-          <h4>Building your retirement strategy with Lasvidex Financial</h4>
-          <p>
-            A practical and professional financial plan always responds to these questions,
-          </p>
-
-          <ul>
-            <li>How much do you need?</li>
-            <li>How do you get there tax-efficiently?</li>
-            <li>How will you protect and maintain the wealth?</li>
-          </ul>
-
-          <p>
-            We are here to determine your retirement income gap, and optimize contribution strategies(RRSP vs TFSA vs corporate investment). Lasvidex will structure your withdrawals in retirement to manimize tax drag and avoid OAS.
-          </p>
-
-          <h4>Retirement Planning for business owners</h4>
-          <p>
-            Businesses usually overlap personal and corporate strategies. By using tools like Individual pension plans (IPPs), Insurance-based strategies, and corporate-owned investments, we will assist you in extracting wealth from a corporation efficiently.
-          </p>
-        </div>
       </div>
 
       <div class="card">
@@ -1965,53 +1789,6 @@
   </div>
 
 </footer>
-
-
-<script id="service-card-expand-script">
-  (function () {
-    const cards = Array.from(document.querySelectorAll(".service-card-expandable"));
-
-    if (!cards.length) return;
-
-    function closeOtherCards(activeCard) {
-      cards.forEach(function (card) {
-        if (card === activeCard) return;
-        const details = card.querySelector(".service-card-details");
-        card.setAttribute("aria-expanded", "false");
-        if (details) details.hidden = true;
-      });
-    }
-
-    function toggleCard(card) {
-      const details = card.querySelector(".service-card-details");
-      if (!details) return;
-
-      const isOpen = card.getAttribute("aria-expanded") === "true";
-
-      if (isOpen) {
-        card.setAttribute("aria-expanded", "false");
-        details.hidden = true;
-      } else {
-        closeOtherCards(card);
-        card.setAttribute("aria-expanded", "true");
-        details.hidden = false;
-      }
-    }
-
-    cards.forEach(function (card) {
-      card.addEventListener("click", function () {
-        toggleCard(card);
-      });
-
-      card.addEventListener("keydown", function (event) {
-        if (event.key === "Enter" || event.key === " ") {
-          event.preventDefault();
-          toggleCard(card);
-        }
-      });
-    });
-  })();
-</script>
 
 <script src="/script.js" defer></script>
 
