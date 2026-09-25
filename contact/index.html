@@ -1132,12 +1132,23 @@
     line-height: 1;
     font-weight: 800;
     white-space: nowrap;
-    transition: transform 0.2s ease, filter 0.2s ease;
+    box-shadow: 0 8px 20px rgba(174, 129, 38, 0.18);
+    transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
   }
 
   .footer-next-step .footer-cta:hover {
     transform: translateY(-1px);
     filter: brightness(1.04);
+    box-shadow: 0 12px 28px rgba(174, 129, 38, 0.32);
+  }
+
+  .footer-links a {
+    transition: color 0.2s ease, opacity 0.2s ease;
+  }
+
+  .footer-links a:hover {
+    color: #e2bd58 !important;
+    opacity: 1 !important;
   }
 
   .footer-social-links {
@@ -1285,6 +1296,8 @@
 </style>
 
 
+
+
 <!-- FOOTER — MATCHED TO SUPPLIED REFERENCE IMAGE -->
 <footer class="footer">
 
@@ -1353,7 +1366,7 @@
         <a href="/services/">Financial Services</a>
         <a href="/travel-insurance/">Travel Insurance</a>
         <a href="/resources/">Resources</a>
-        <a href="/blog/">Blogs</a>
+        <a href="/blog/" aria-current="page">Blogs</a>
         <a href="/contact/">Get a Quote</a>
       </nav>
     </div>
