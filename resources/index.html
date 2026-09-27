@@ -467,6 +467,84 @@
 }
 </style>
 
+<style id="home-responsive-header-fix">
+/* Only fixes header responsiveness on tablet/smaller laptop widths. */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .site-header .nav {
+    width: 100% !important;
+    min-height: 78px !important;
+    height: 78px !important;
+    padding: 0 4% !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 16px !important;
+    position: relative !important;
+  }
+
+  .site-header .brand {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: 78px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex: 0 1 auto !important;
+    white-space: nowrap !important;
+  }
+
+  .site-header .brand img {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    flex: 0 0 48px !important;
+    object-fit: contain !important;
+  }
+
+  .site-header .brand span {
+    font-size: 18px !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
+  }
+
+  .site-header .nav-links {
+    display: none !important;
+  }
+
+  .site-header .mobile-header-cta {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: 12px !important;
+    min-height: 46px !important;
+    padding: 12px 18px !important;
+    border-radius: 10px !important;
+    white-space: nowrap !important;
+    flex: 0 0 auto !important;
+  }
+
+  .site-header .menu-toggle {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    flex: 0 0 48px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .site-header .nav-links .nav-cta + .nav-cta {
+    margin-top: 14px !important;
+  }
+}
+</style>
 </head>
 
 <body>
