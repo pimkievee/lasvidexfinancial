@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Insurance Solutions Canada | Lasvidex Financial</title>
+
+  <meta
+    name="description"
+    content="Explore life insurance, critical illness insurance, disability insurance, travel insurance, health and dental insurance, and corporate business insurance with Lasvidex Financial."
+  />
+
+  <meta
+    name="keywords"
+    content="life insurance Canada, critical illness insurance, disability insurance, travel insurance, health dental insurance, business insurance Canada"
+  />
+
+  <link rel="canonical" href="https://lasvidexfinancial.com/insurance/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: #10213c;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* =========================================================
+       TOP BAR
+       ========================================================= */
+
+    .topbar {
+      width: 100%;
+      background: #1b2a64;
+      color: #ffffff;
+    }
+
+    .topbar-inner {
+      width: min(1265px, calc(100% - 60px));
+      margin: 0 auto;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .social-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .social-links a {
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 600;
+      opacity: 0.95;
+    }
+
+    .phone-link {
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* =========================================================
+       HEADER
+       ========================================================= */
+
+    .site-header {
+      width: 100%;
+      background: #ffffff;
+      border-bottom: 1px solid rgba(16, 33, 60, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      width: min(1400px, calc(100% - 70px));
+      min-height: 82px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .brand img {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+    }
+
+    .brand span {
+      font-size: 21px;
+      font-weight: 800;
+      color: #10213c;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 20px;
+      white-space: nowrap;
+    }
+
+    .nav-links > a,
+    .dropdown-toggle {
+      font-size: 14px;
+      font-weight: 600;
+      color: #10213c;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      padding: 28px 0;
+      font-family: inherit;
+    }
+
+    .nav-links > a:hover,
+    .dropdown-toggle:hover {
+      color: #ae8126;
+    }
+
+    /* =========================================================
+       INSURANCE DROPDOWN
+       ========================================================= */
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .dropdown-arrow {
+      font-size: 11px;
+      transition: transform 0.2s ease;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: calc(100% - 1px);
+      left: 50%;
+      transform: translateX(-50%);
+      width: 315px;
+      background: #ffffff;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 18px 45px rgba(7, 29, 58, 0.18);
+      border: 1px solid rgba(16, 33, 60, 0.08);
+      padding: 12px 0;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.2s ease, visibility 0.2s ease;
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .dropdown:focus-within .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .dropdown:hover .dropdown-arrow {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 14px 24px;
+      color: #10213c;
+      font-size: 15px;
+      font-weight: 600;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .dropdown-menu a:hover {
+      background: #f4f7fb;
+      color: #ae8126;
+    }
+
+    .nav-cta {
+      display: inline-flex !important;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 21px !important;
+      border-radius: 9px;
+      background: linear-gradient(135deg, #e2bd58, #ae8126);
+      color: #10213c !important;
+      font-weight: 800 !important;
+    }
+
+    .nav-cta:hover {
+      color: #10213c !important;
+      filter: brightness(1.04);
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 30px;
+      color: #10213c;
+      cursor: pointer;
+    }
+
+    /* =========================================================
+       HERO
+       ========================================================= */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(
+          105deg,
+          #001c3e 0%,
+          #032b56 52%,
+          #2b3a43 100%
+        );
+      color: #ffffff;
+    }
+
+    .hero-inner {
+      width: min(1265px, calc(100% - 60px));
+      min-height: 610px;
+      margin: 0 auto;
+      padding: 90px 0;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+    .eyebrow {
+      margin-bottom: 18px;
+      color: #e2bd58;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(44px, 5vw, 68px);
+      line-height: 1.05;
+      margin-bottom: 28px;
+      letter-spacing: -1.5px;
+    }
+
+    .hero-text {
+      max-width: 670px;
+      font-size: 19px;
+      line-height: 1.75;
+      color: rgba(255, 255, 255, 0.92);
+      margin-bottom: 34px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 55px;
+      padding: 0 27px;
+      border-radius: 9px;
+      font-weight: 800;
+    }
+
+    .hero-button.primary {
+      background: linear-gradient(135deg, #e2bd58, #ae8126);
+      color: #10213c;
+    }
+
+    .hero-button.secondary {
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .hero-button.secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .hero-visual {
+      min-height: 430px;
+      border-radius: 18px;
+      overflow: hidden;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,0.12),
+          rgba(255,255,255,0.03)
+        );
+      border: 1px solid rgba(255,255,255,0.16);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .protection-card {
+      width: 100%;
+      max-width: 440px;
+      padding: 40px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.96);
+      color: #10213c;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.18);
+    }
+
+    .protection-card small {
+      display: block;
+      margin-bottom: 12px;
+      color: #ae8126;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+    }
+
+    .protection-card h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 32px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .protection-card p {
+      color: #4d5b70;
+      line-height: 1.7;
+    }
+
+    /* =========================================================
+       INSURANCE OPTIONS
+       ========================================================= */
+
+    .section {
+      padding: 95px 0;
+    }
+
+    .section-inner {
+      width: min(1265px, calc(100% - 60px));
+      margin: 0 auto;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 50px;
+    }
+
+    .section-heading .eyebrow {
+      color: #ae8126;
+    }
+
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      color: #10213c;
+      font-size: clamp(36px, 4vw, 52px);
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .section-heading p {
+      color: #59677a;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .insurance-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .insurance-card {
+      position: relative;
+      min-height: 285px;
+      padding: 34px;
+      background: #ffffff;
+      border: 1px solid rgba(16, 33, 60, 0.1);
+      border-top: 3px solid #ae8126;
+      border-radius: 10px;
+      box-shadow: 0 12px 35px rgba(16, 33, 60, 0.07);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .insurance-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 42px rgba(16, 33, 60, 0.12);
+    }
+
+    .card-number {
+      color: #ae8126;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      margin-bottom: 18px;
+    }
+
+    .insurance-card h3 {
+      color: #10213c;
+      font-family: "Playfair Display", serif;
+      font-size: 27px;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .insurance-card p {
+      color: #59677a;
+      line-height: 1.7;
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
+
+    .card-link {
+      margin-top: auto;
+      color: #10213c;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .card-link span {
+      color: #ae8126;
+      margin-left: 5px;
+    }
+
+    /* =========================================================
+       WHY INSURANCE
+       ========================================================= */
+
+    .why-section {
+      background: #f5f7fa;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 75px;
+      align-items: center;
+    }
+
+    .why-content h2 {
+      font-family: "Playfair Display", serif;
+      color: #10213c;
+      font-size: clamp(36px, 4vw, 52px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .why-content > p {
+      color: #59677a;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .benefit {
+      padding: 28px;
+      background: #ffffff;
+      border-radius: 10px;
+      border: 1px solid rgba(16, 33, 60, 0.08);
+    }
+
+    .benefit h3 {
+      color: #10213c;
+      font-size: 18px;
+      margin-bottom: 9px;
+    }
+
+    .benefit p {
+      color: #59677a;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    /* =========================================================
+       CTA
+       ========================================================= */
+
+    .cta-section {
+      padding: 85px 0;
+      background: #032b55;
+      color: #ffffff;
+    }
+
+    .cta-inner {
+      width: min(1100px, calc(100% - 60px));
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .cta-inner .eyebrow {
+      color: #e2bd58;
+    }
+
+    .cta-inner h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(36px, 4vw, 54px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .cta-inner p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: rgba(255,255,255,0.88);
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    .footer {
+      background: #032b55;
+      color: #ffffff;
+      border-top: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .footer-inner {
+      width: min(1265px, calc(100% - 60px));
+      margin: 0 auto;
+      padding: 70px 0 50px;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 60px;
+    }
+
+    .footer-brand img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      background: #ffffff;
+      margin-bottom: 18px;
+    }
+
+    .footer-brand h3 {
+      font-size: 23px;
+      margin-bottom: 14px;
+    }
+
+    .footer-brand p {
+      max-width: 430px;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.7;
+    }
+
+    .footer-column h3 {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 22px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.9);
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .footer-links a:hover {
+      color: #e2bd58;
+    }
+
+    .footer-bottom {
+      width: min(1265px, calc(100% - 60px));
+      margin: 0 auto;
+      padding: 22px 0;
+      border-top: 1px solid rgba(255,255,255,0.13);
+      color: rgba(255,255,255,0.7);
+      font-size: 14px;
+    }
+
+    /* =========================================================
+       MOBILE
+       ========================================================= */
+
+    @media (max-width: 1100px) {
+
+      .nav {
+        min-height: 74px;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 15px 25px 25px;
+        background: #ffffff;
+        border-top: 1px solid rgba(16,33,60,0.08);
+        box-shadow: 0 15px 35px rgba(16,33,60,0.12);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links > a,
+      .dropdown-toggle {
+        width: 100%;
+        padding: 14px 5px;
+        text-align: left;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .dropdown-menu {
+        position: static;
+        width: 100%;
+        transform: none;
+        box-shadow: none;
+        border: 0;
+        border-radius: 0;
+        padding: 0 0 5px 15px;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+
+      .dropdown.open .dropdown-menu {
+        display: block;
+      }
+
+      .dropdown:hover .dropdown-menu {
+        display: none;
+      }
+
+      .dropdown.open .dropdown-menu {
+        display: block;
+      }
+
+      .dropdown.open .dropdown-arrow {
+        transform: rotate(180deg);
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 75px 0;
+      }
+
+      .hero-visual {
+        min-height: 330px;
+      }
+
+      .insurance-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+
+      .topbar-inner {
+        width: calc(100% - 30px);
+      }
+
+      .social-links {
+        gap: 12px;
+      }
+
+      .phone-link {
+        font-size: 12px;
+      }
+
+      .nav {
+        width: calc(100% - 30px);
+      }
+
+      .brand span {
+        font-size: 18px;
+      }
+
+      .brand img {
+        width: 45px;
+        height: 45px;
+      }
+
+      .hero-inner,
+      .section-inner,
+      .footer-inner,
+      .footer-bottom {
+        width: calc(100% - 36px);
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero-text {
+        font-size: 16px;
+      }
+
+      .insurance-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .benefits {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 70px 0;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================
+       TOP BAR
+       ========================================================= -->
+
+  <div class="topbar">
+    <div class="topbar-inner">
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/share/1DC1nU5aBw/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/lasvidexfinancial?igsh=anVjNHhtbTdnc25v/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.youtube.com/@lasvidexfinancial" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.linkedin.com/company/websiteinprogress/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.tiktok.com/@lasvidexfinancial?_r=1&_t=ZS-97d4Lxt3nTJ" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </div>
+
+      <a class="phone-link" href="tel:+16474669921">
+        +1 (647) 466-9921
+      </a>
+
+    </div>
+  </div>
+
+
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+
+  <header class="site-header">
+    <nav class="nav">
+
+      <a class="brand" href="/" aria-label="Lasvidex Financial home">
+        <img
+          src="/assets/lasvidex-financial-logo.jpg"
+          width="256"
+          height="256"
+          alt="Lasvidex Financial logo"
+        />
+        <span>Lasvidex Financial</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <div class="nav-links" id="mainNav">
+
+        <a href="/">Home</a>
+
+        <a href="/about/">About</a>
+
+        <a href="/services/">Financial Services</a>
+
+        <!-- INSURANCE DROPDOWN -->
+        <div class="dropdown">
+
+          <button
+            class="dropdown-toggle"
+            type="button"
+            aria-expanded="false"
+          >
+            Insurance
+            <span class="dropdown-arrow">▼</span>
+          </button>
+
+          <div class="dropdown-menu">
+
+            <a href="/insurance/life-insurance/">
+              Life Insurance
+            </a>
+
+            <a href="/insurance/critical-illness-insurance/">
+              Critical Illness Insurance
+            </a>
+
+            <a href="/insurance/disability-insurance/">
+              Disability Insurance
+            </a>
+
+            <a href="/insurance/travel-insurance/">
+              Travel Insurance
+            </a>
+
+            <a href="/insurance/health-dental-insurance/">
+              Health &amp; Dental Insurance
+            </a>
+
+            <a href="/insurance/corporate-business-insurance/">
+              Corporate / Business Insurance
+            </a>
+
+          </div>
+
+        </div>
+
+        <a href="/investments/">Investments</a>
+
+        <a href="/resources/">Resources</a>
+
+        <a href="/blog/">Blogs</a>
+
+        <a
+          href="/contact/"
+          class="nav-cta"
+        >
+          Get a Quote
+        </a>
+
+        <a
+          href="/book-session/"
+          class="nav-cta"
+        >
+          Book Consultation
+        </a>
+
+      </div>
+
+    </nav>
+  </header>
+
+
+  <!-- =========================================================
+       HERO
+       ========================================================= -->
+
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-inner">
+
+        <div class="hero-content">
+
+          <p class="eyebrow">
+            Insurance Solutions
+          </p>
+
+          <h1>
+            Protect what matters most with the right insurance strategy.
+          </h1>
+
+          <p class="hero-text">
+            Explore insurance solutions designed to help individuals,
+            families, professionals, and business owners protect their
+            income, health, family, assets, and long-term financial goals.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a
+              href="/contact/"
+              class="hero-button primary"
+            >
+              Get a Quote
+            </a>
+
+            <a
+              href="/book-session/"
+              class="hero-button secondary"
+            >
+              Book Consultation
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+          <div class="protection-card">
+
+            <small>
+              Insurance Planning
+            </small>
+
+            <h2>
+              Protection that fits your financial strategy.
+            </h2>
+
+            <p>
+              From personal protection to business coverage,
+              explore insurance options that can complement
+              your broader financial planning goals.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         INSURANCE OPTIONS
+         ======================================================= -->
+
+    <section class="section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            Insurance Solutions
+          </p>
+
+          <h2>
+            Explore our insurance services.
+          </h2>
+
+          <p>
+            Choose an insurance area to learn more about the
+            types of protection that may fit your personal,
+            family, professional, or business needs.
+          </p>
+
+        </div>
+
+
+        <div class="insurance-grid">
+
+          <!-- LIFE -->
+
+          <article class="insurance-card">
+
+            <div class="card-number">
+              01
+            </div>
+
+            <h3>
+              Life Insurance
+            </h3>
+
+            <p>
+              Explore life insurance solutions designed to help
+              protect loved ones, support financial obligations,
+              and address long-term legacy planning.
+            </p>
+
+            <a
+              href="/insurance/life-insurance/"
+              class="card-link"
+            >
+              Explore Life Insurance
+              <span>→</span>
+            </a>
+
+          </article>
+
+
+          <!-- CRITICAL ILLNESS -->
+
+          <article class="insurance-card">
+
+            <div class="card-number">
+              02
+            </div>
+
+            <h3>
+              Critical Illness Insurance
+            </h3>
+
+            <p>
+              Learn about coverage designed to provide financial
+              support following a qualifying critical illness.
+            </p>
+
+            <a
+              href="/insurance/critical-illness-insurance/"
+              class="card-link"
+            >
+              Explore Critical Illness Insurance
+              <span>→</span>
+            </a>
+
+          </article>
+
+
+          <!-- DISABILITY -->
+
+          <article class="insurance-card">
+
+            <div class="card-number">
+              03
+            </div>
+
+            <h3>
+              Disability Insurance
+            </h3>
+
+            <p>
+              Explore protection designed to help support income
+              and financial commitments when illness or injury
+              affects your ability to work.
+            </p>
+
+            <a
+              href="/insurance/disability-insurance/"
+              class="card-link"
+            >
+              Explore Disability Insurance
+              <span>→</span>
+            </a>
+
+          </article>
+
+
+          <!-- TRAVEL -->
+
+          <article class="insurance-card">
+
+            <div class="card-number">
+              04
+            </div>
+
+            <h3>
+              Travel Insurance
+            </h3>
+
+            <p>
+              Explore travel insurance options for Canadians
+              travelling within Canada or internationally.
+            </p>
+
+            <a
+              href="/insurance/travel-insurance/"
+              class="card-link"
+            >
+              Explore Travel Insurance
+              <span>→</span>
+            </a>
+
+          </article>
+
+
+          <!-- HEALTH -->
+
+          <article class="insurance-card">
+
+            <div class="card-number">
+              05
+            </div>
+
+            <h3>
+              Health &amp; Dental Insurance
+            </h3>
+
+            <p>
+              Explore health and dental protection options that
+              can complement existing workplace or personal
+              coverage.
+            </p>
+
+            <a
+              href="/insurance/health-dental-insurance/"
+              class="card-link"
+            >
+              Explore Health &amp; Dental
+              <span>→</span>
+            </a>
+
+          </article>
+
+
+          <!-- BUSINESS -->
+
+          <article class="insurance-card">
+
+            <div class="card-number">
+              06
+            </div>
+
+            <h3>
+              Corporate / Business Insurance
+            </h3>
+
+            <p>
+              Explore insurance strategies for business owners,
+              corporate protection, succession planning, and
+              business continuity.
+            </p>
+
+            <a
+              href="/insurance/corporate-business-insurance/"
+              class="card-link"
+            >
+              Explore Business Insurance
+              <span>→</span>
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         WHY INSURANCE
+         ======================================================= -->
+
+    <section class="section why-section">
+
+      <div class="section-inner">
+
+        <div class="why-grid">
+
+          <div class="why-content">
+
+            <p class="eyebrow">
+              Strategic Protection
+            </p>
+
+            <h2>
+              Insurance should work alongside your financial plan.
+            </h2>
+
+            <p>
+              Insurance decisions can be connected to your broader
+              financial strategy, including income protection,
+              family planning, retirement goals, business planning,
+              and legacy considerations.
+            </p>
+
+          </div>
+
+
+          <div class="benefits">
+
+            <div class="benefit">
+
+              <h3>
+                Family Protection
+              </h3>
+
+              <p>
+                Consider how insurance may support dependants
+                and family financial obligations.
+              </p>
+
+            </div>
+
+
+            <div class="benefit">
+
+              <h3>
+                Income Protection
+              </h3>
+
+              <p>
+                Explore protection strategies for your ability
+                to earn and maintain financial commitments.
+              </p>
+
+            </div>
+
+
+            <div class="benefit">
+
+              <h3>
+                Business Protection
+              </h3>
+
+              <p>
+                Consider insurance needs related to business
+                ownership, continuity, and succession.
+              </p>
+
+            </div>
+
+
+            <div class="benefit">
+
+              <h3>
+                Long-Term Planning
+              </h3>
+
+              <p>
+                Connect protection decisions with retirement,
+                estate, and broader financial planning.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         CTA
+         ======================================================= -->
+
+    <section class="cta-section">
+
+      <div class="cta-inner">
+
+        <p class="eyebrow">
+          Start Your Planning
+        </p>
+
+        <h2>
+          Let's discuss your insurance needs.
+        </h2>
+
+        <p>
+          Tell us about your situation, priorities, and planning
+          goals so we can determine the appropriate next step.
+        </p>
+
+        <div class="hero-buttons" style="justify-content:center;">
+
+          <a
+            href="/contact/"
+            class="hero-button primary"
+          >
+            Get a Quote
+          </a>
+
+          <a
+            href="/book-session/"
+            class="hero-button secondary"
+          >
+            Book Consultation
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+
+  <footer class="footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+
+        <img
+          src="/assets/lasvidex-financial-logo.jpg"
+          width="256"
+          height="256"
+          alt="Lasvidex Financial logo"
+        />
+
+        <h3>
+          Lasvidex Financial
+        </h3>
+
+        <p>
+          Empowering individuals, families, and business owners
+          with strategic financial solutions for confident wealth
+          building, protection, and legacy planning.
+        </p>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>
+          Quick Links
+        </h3>
+
+        <nav class="footer-links">
+
+          <a href="/">
+            Home
+          </a>
+
+          <a href="/about/">
+            About
+          </a>
+
+          <a href="/services/">
+            Financial Services
+          </a>
+
+          <a href="/insurance/">
+            Insurance
+          </a>
+
+          <a href="/investments/">
+            Investments
+          </a>
+
+          <a href="/resources/">
+            Resources
+          </a>
+
+          <a href="/blog/">
+            Blogs
+          </a>
+
+          <a href="/contact/">
+            Get a Quote
+          </a>
+
+        </nav>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>
+          Insurance
+        </h3>
+
+        <nav class="footer-links">
+
+          <a href="/insurance/life-insurance/">
+            Life Insurance
+          </a>
+
+          <a href="/insurance/critical-illness-insurance/">
+            Critical Illness Insurance
+          </a>
+
+          <a href="/insurance/disability-insurance/">
+            Disability Insurance
+          </a>
+
+          <a href="/insurance/travel-insurance/">
+            Travel Insurance
+          </a>
+
+          <a href="/insurance/health-dental-insurance/">
+            Health &amp; Dental Insurance
+          </a>
+
+          <a href="/insurance/corporate-business-insurance/">
+            Corporate / Business Insurance
+          </a>
+
+        </nav>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      © 2026 Lasvidex Financial. All rights reserved.
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================================================
+       MOBILE MENU SCRIPT
+       ========================================================= -->
+
+  <script>
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    const insuranceDropdown = document.querySelector(".dropdown");
+    const insuranceToggle = document.querySelector(".dropdown-toggle");
+
+    menuToggle.addEventListener("click", function () {
+
+      const isOpen = navLinks.classList.toggle("active");
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        isOpen ? "true" : "false"
+      );
+
+    });
+
+
+    insuranceToggle.addEventListener("click", function (event) {
+
+      if (window.innerWidth <= 1100) {
+
+        event.preventDefault();
+
+        const isOpen =
+          insuranceDropdown.classList.toggle("open");
+
+        insuranceToggle.setAttribute(
+          "aria-expanded",
+          isOpen ? "true" : "false"
+        );
+
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>
