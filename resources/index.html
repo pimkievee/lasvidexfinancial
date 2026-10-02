@@ -553,21 +553,6 @@
   }
 }
 </style>
-<style id="insurance-nav-dropdown">
-  .site-header .insurance-dropdown { position: relative; display: inline-flex; align-items: center; flex: 0 0 auto; margin: 0; padding: 0; white-space: nowrap; }
-  .site-header .insurance-dropdown > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; margin: 0; padding: 0; font-size: 14px; line-height: 1.2; font-weight: 600; color: inherit; white-space: nowrap; }
-  .site-header .insurance-dropdown > summary::-webkit-details-marker { display: none; }
-  .site-header .insurance-dropdown > summary::after { content: "▾"; font-size: 10px; }
-  .site-header .insurance-dropdown-menu { position: absolute; top: calc(100% + 22px); left: 50%; transform: translateX(-50%); width: 315px; padding: 10px 0; background: #ffffff; border-radius: 0 0 10px 10px; box-shadow: 0 18px 45px rgba(7, 29, 58, 0.18); border: 1px solid rgba(16, 33, 60, 0.08); z-index: 2000; }
-  .site-header .insurance-dropdown-menu a { display: block; padding: 13px 22px; color: #10213c; font-size: 14px; font-weight: 600; text-decoration: none; white-space: nowrap; }
-  .site-header .insurance-dropdown-menu a:hover { background: #f4f7fb; color: #ae8126; }
-  @media (max-width: 900px) {
-    .site-header .insurance-dropdown { display: block; width: 100%; }
-    .site-header .insurance-dropdown > summary { width: 100%; padding: 10px 0; }
-    .site-header .insurance-dropdown-menu { position: static; width: 100%; transform: none; padding: 0 0 0 15px; box-shadow: none; border: 0; border-radius: 0; }
-    .site-header .insurance-dropdown-menu a { padding: 10px 0; white-space: normal; }
-  }
-</style>
 </head>
 
 <body>
@@ -678,17 +663,7 @@
       <a href="/about/">About</a>
       <a href="/services/">Financial Services</a>
       <a href="/investments/">Investments</a>
-      <details class="insurance-dropdown">
-        <summary>Insurance</summary>
-        <div class="insurance-dropdown-menu">
-          <a href="/insurance/life-insurance/">Life Insurance</a>
-          <a href="/insurance/critical-illness-insurance/">Critical Illness Insurance</a>
-          <a href="/insurance/disability-insurance/">Disability Insurance</a>
-          <a href="/insurance/travel-insurance/">Travel Insurance</a>
-          <a href="/insurance/health-dental-insurance/">Health &amp; Dental Insurance</a>
-          <a href="/insurance/corporate-business-insurance/">Corporate / Business Insurance</a>
-        </div>
-      </details>
+      <a href="/travel-insurance/">Travel Insurance</a>
       <a href="/resources/">Resources</a>
       <a href="/blog/">Blogs</a>
       <a href="/contact/" class="nav-cta quote-nav-link">Get a Quote</a>
@@ -1468,20 +1443,19 @@
       </p>
     </div>
 
-    <!-- QUICK LINKS -->
+    <!-- EXPLORE -->
     <div class="footer-column">
-      <h3>Quick Links</h3>
+      <h3>Explore</h3>
 
-      <nav class="footer-links" aria-label="Footer quick links">
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/financial-planner-whitby/">Financial Planner in Toronto</a>
-        <a href="/services/">Financial Services</a>
-        <a href="/investments/">Investments</a>
-        <a href="/insurance/">Insurance</a>
-        <a href="/resources/">Resources</a>
-        <a href="/blog/" aria-current="page">Blogs</a>
+      <nav class="footer-links" aria-label="Footer explore links">
         <a href="/contact/">Get a Quote</a>
+        <a href="/insurance/life-insurance/">Life Insurance</a>
+        <a href="/insurance/life-insurance/">Life Insurance in Toronto, Ontario</a>
+        <a href="/insurance/">Insurance</a>
+        <a href="/investments/">Investments</a>
+        <a href="/services/">Financial Planning</a>
+        <a href="/resources/">Resources</a>
+        <a href="/privacy-policy/">Privacy Policy</a>
       </nav>
     </div>
 
