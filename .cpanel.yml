@@ -10,6 +10,7 @@ deployment:
     - /bin/cp -R financial-planner-whitby $DEPLOYPATH
     - /bin/cp -R insurance $DEPLOYPATH
     - /bin/cp -R investments $DEPLOYPATH
+    - /bin/cp -R privacy-policy $DEPLOYPATH
     - /bin/cp -R lead $DEPLOYPATH
     - /bin/cp -R resources $DEPLOYPATH
     - /bin/cp -R services $DEPLOYPATH
