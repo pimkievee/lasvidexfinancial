@@ -11,6 +11,7 @@ deployment:
     - /bin/cp -R financial-planner-toronto $DEPLOYPATH
     - /bin/cp -R insurance $DEPLOYPATH
     - /bin/cp -R investments $DEPLOYPATH
+    - /bin/cp -R life-insurance-canada $DEPLOYPATH
     - /bin/cp -R privacy-policy $DEPLOYPATH
     - /bin/cp -R lead $DEPLOYPATH
     - /bin/cp -R resources $DEPLOYPATH
