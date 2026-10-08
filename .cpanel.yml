@@ -8,6 +8,7 @@ deployment:
     - /bin/cp -R book-session $DEPLOYPATH
     - /bin/cp -R contact $DEPLOYPATH
     - /bin/cp -R financial-planner-whitby $DEPLOYPATH
+    - /bin/cp -R financial-planner-toronto $DEPLOYPATH
     - /bin/cp -R insurance $DEPLOYPATH
     - /bin/cp -R investments $DEPLOYPATH
     - /bin/cp -R privacy-policy $DEPLOYPATH
