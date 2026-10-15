@@ -536,6 +536,57 @@
     }
   </style>
 
+
+  <!-- Match the corrected Home/About/Blogs mobile header layout. -->
+  <style id="get-quote-mobile-header-final-overflow-fix">
+/* Match the Home/About mobile header while keeping the full brand and controls visible. */
+@media (max-width: 900px) {
+  .site-header .nav {
+    display: flex !important; align-items: center !important; justify-content: space-between !important;
+    gap: 6px !important; width: 100% !important; min-height: 78px !important; height: 78px !important;
+    padding: 0 12px !important; margin: 0 !important; box-sizing: border-box !important;
+  }
+  .site-header .brand {
+    display: inline-flex !important; align-items: center !important; gap: 7px !important;
+    flex: 1 1 0 !important; width: auto !important; min-width: 0 !important; max-width: none !important;
+    margin: 0 !important; padding: 0 !important; overflow: hidden !important; white-space: nowrap !important;
+  }
+  .site-header .brand img {
+    display: block !important; width: 42px !important; height: 42px !important;
+    min-width: 42px !important; max-width: 42px !important; flex: 0 0 42px !important; object-fit: contain !important;
+  }
+  .site-header .brand span {
+    display: block !important; flex: 1 1 auto !important; min-width: 0 !important;
+    font-family: "Inter", sans-serif !important; font-size: 15px !important; line-height: 1.1 !important;
+    font-weight: 800 !important; letter-spacing: -0.35px !important; white-space: nowrap !important;
+    overflow: hidden !important; text-overflow: clip !important;
+  }
+  .site-header .mobile-header-cta {
+    display: inline-flex !important; align-items: center !important; justify-content: center !important;
+    flex: 0 0 auto !important; width: auto !important; min-width: 0 !important; min-height: 36px !important; height: 36px !important;
+    margin: 0 2px 0 4px !important; padding: 8px 10px !important; border: 0 !important; border-radius: 8px !important;
+    background: linear-gradient(135deg, #e0bd63 0%, #b88b2b 100%) !important; color: #111 !important;
+    font-family: "Inter", sans-serif !important; font-size: 12px !important; font-weight: 800 !important;
+    line-height: 1 !important; text-decoration: none !important; white-space: nowrap !important;
+    box-sizing: border-box !important; box-shadow: none !important;
+  }
+  .site-header .menu-toggle {
+    display: inline-flex !important; align-items: center !important; justify-content: center !important;
+    flex: 0 0 40px !important; width: 40px !important; min-width: 40px !important; height: 48px !important;
+    margin: 0 !important; padding: 0 !important; font-size: 27px !important; line-height: 1 !important;
+  }
+  .site-header .nav-links {
+    display: none !important; position: absolute !important; top: 100% !important; left: 0 !important; right: 0 !important;
+    width: 100% !important; height: auto !important; min-width: 0 !important; z-index: 9999 !important;
+  }
+  .site-header .nav-links.mobile-open { display: flex !important; }
+}
+@media (min-width: 381px) and (max-width: 900px) {
+  .site-header .brand img { width: 48px !important; height: 48px !important; min-width: 48px !important; max-width: 48px !important; flex-basis: 48px !important; }
+  .site-header .brand span { font-size: 17px !important; }
+  .site-header .menu-toggle { flex-basis: 48px !important; width: 48px !important; min-width: 48px !important; }
+}
+</style>
 </head>
 
 <body>
