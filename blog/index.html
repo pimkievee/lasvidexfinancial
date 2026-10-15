@@ -1784,6 +1784,18 @@
     }
 
     @media (max-width: 900px) {
+      .site-header .brand {
+        min-width: 0 !important;
+        max-width: calc(100% - 220px) !important;
+        flex: 0 1 auto !important;
+      }
+
+      .site-header .brand span {
+        min-width: 0 !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+      }
+
       .site-header .mobile-header-cta {
         display: inline-flex;
         align-items: center;
