@@ -687,6 +687,58 @@
 }
 </style>
 
+
+<style id="get-quote-mobile-scroll-recovery">
+/* Restore normal document scrolling on phones; keep the full Get a Quote page reachable. */
+html {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  overscroll-behavior-y: auto !important;
+}
+body {
+  position: static !important;
+  height: auto !important;
+  min-height: 100% !important;
+  max-height: none !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  touch-action: pan-y !important;
+}
+body, body * {
+  touch-action: pan-y pinch-zoom;
+}
+.page, main.page, .quote-layout, #trusted-partners, .footer, footer {
+  position: relative;
+  height: auto !important;
+  min-height: 0;
+  max-height: none !important;
+  overflow: visible !important;
+}
+.page {
+  display: block !important;
+}
+.quote-layout {
+  align-items: start;
+}
+@media (max-width: 900px) {
+  html, body {
+    overflow-y: auto !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+  .site-header { z-index: 100 !important; }
+  .site-header .nav-links {
+    max-height: calc(100dvh - 120px) !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+}
+</style>
+
 </head>
 
 <body>
@@ -1784,6 +1836,28 @@
 </script>
 
 <script src="/script.js" defer></script>
+
+
+<script id="get-quote-mobile-scroll-unlock">
+(function () {
+  function restoreDocumentScroll() {
+    document.documentElement.style.setProperty('overflow-y', 'auto', 'important');
+    document.documentElement.style.setProperty('height', 'auto', 'important');
+    document.body.style.setProperty('position', 'static', 'important');
+    document.body.style.setProperty('overflow-y', 'auto', 'important');
+    document.body.style.setProperty('height', 'auto', 'important');
+    document.body.style.setProperty('max-height', 'none', 'important');
+  }
+  restoreDocumentScroll();
+  window.addEventListener('pageshow', restoreDocumentScroll, { passive: true });
+  window.addEventListener('orientationchange', restoreDocumentScroll, { passive: true });
+  document.addEventListener('click', function (event) {
+    if (event.target.closest('.menu-toggle, .mobile-header-cta, .nav-links a')) {
+      window.setTimeout(restoreDocumentScroll, 80);
+    }
+  }, true);
+})();
+</script>
 
 </body>
 </html>
