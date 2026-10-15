@@ -1859,5 +1859,148 @@ body, body * {
 })();
 </script>
 
+
+<style id="get-quote-about-mobile-menu-fix">
+/* Match the About tab mobile header and explicitly support the hamburger state. */
+@media (max-width: 900px) {
+  .site-header {
+    position: relative !important;
+    z-index: 10000 !important;
+    overflow: visible !important;
+  }
+
+  .site-header .nav {
+    position: relative !important;
+    overflow: visible !important;
+  }
+
+  .site-header .nav-links {
+    display: none !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 16px !important;
+    right: 16px !important;
+    width: auto !important;
+    max-height: calc(100vh - 150px) !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain !important;
+    -webkit-overflow-scrolling: touch !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+    padding: 14px 18px 18px !important;
+    margin: 0 !important;
+    background: #fff !important;
+    border: 1px solid #e5e7eb !important;
+    border-top: 0 !important;
+    border-radius: 0 0 12px 12px !important;
+    box-shadow: 0 15px 35px rgba(16, 33, 60, .16) !important;
+    z-index: 10001 !important;
+    white-space: normal !important;
+  }
+
+  .site-header .nav-links.mobile-open,
+  .site-header .nav-links.menu-open,
+  .site-header .nav-links.active {
+    display: flex !important;
+  }
+
+  .site-header .nav-links > a,
+  .site-header .nav-links .insurance-dropdown > summary {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    min-height: 44px !important;
+    padding: 12px 8px !important;
+    box-sizing: border-box !important;
+    white-space: normal !important;
+  }
+
+  .site-header .nav-links .nav-cta {
+    justify-content: center !important;
+    margin-top: 8px !important;
+    padding: 13px 16px !important;
+  }
+
+  .site-header .menu-toggle {
+    position: relative !important;
+    z-index: 10002 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 48px !important;
+    width: 48px !important;
+    min-width: 48px !important;
+    height: 48px !important;
+    padding: 0 !important;
+    cursor: pointer !important;
+    touch-action: manipulation !important;
+  }
+}
+</style>
+
+<script id="get-quote-about-mobile-menu-functionality">
+(function () {
+  function setupQuoteMobileMenu() {
+    var header = document.querySelector('.site-header');
+    if (!header || header.dataset.quoteMenuFixed === 'true') return;
+
+    var toggle = header.querySelector('.menu-toggle');
+    var navLinks = header.querySelector('.nav-links');
+    if (!toggle || !navLinks) return;
+
+    header.dataset.quoteMenuFixed = 'true';
+    toggle.setAttribute('type', 'button');
+
+    function setMenuOpen(open) {
+      navLinks.classList.toggle('mobile-open', open);
+      navLinks.classList.toggle('menu-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    }
+
+    /* Capture the tap so conflicting shared script handlers cannot cancel the menu state. */
+    document.addEventListener('click', function (event) {
+      var clickedToggle = event.target && event.target.closest
+        ? event.target.closest('.site-header .menu-toggle') : null;
+
+      if (clickedToggle === toggle) {
+        event.preventDefault();
+        event.stopPropagation();
+        if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+        setMenuOpen(!navLinks.classList.contains('mobile-open'));
+        return;
+      }
+
+      var clickedLink = event.target && event.target.closest
+        ? event.target.closest('.site-header .nav-links a') : null;
+
+      if (clickedLink && navLinks.contains(clickedLink) && window.matchMedia('(max-width: 900px)').matches) {
+        setMenuOpen(false);
+      }
+    }, true);
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') setMenuOpen(false);
+    });
+
+    window.addEventListener('resize', function () {
+      if (!window.matchMedia('(max-width: 900px)').matches) {
+        setMenuOpen(false);
+      }
+    });
+
+    setMenuOpen(false);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupQuoteMobileMenu, { once: true });
+  } else {
+    setupQuoteMobileMenu();
+  }
+})();
+</script>
+
 </body>
 </html>
