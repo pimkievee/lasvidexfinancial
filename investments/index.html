@@ -1438,6 +1438,26 @@
   }
 </style>
 
+
+
+<style id="investment-mobile-get-quote-button">
+  /* Add the existing Get Quote action beside the mobile menu only. */
+  .site-header .mobile-header-cta { display: none !important; }
+  @media (max-width: 900px) {
+    .site-header .nav { display: flex; align-items: center; gap: 8px; }
+    .site-header .mobile-header-cta {
+      display: inline-flex !important; align-items: center; justify-content: center;
+      margin-left: auto; margin-right: 0; min-height: 36px; padding: 8px 11px;
+      border: 0; border-radius: 8px;
+      background: linear-gradient(135deg, #e0bd63 0%, #b88b2b 100%);
+      color: #111; font-family: "Inter", sans-serif; font-size: 12px;
+      font-weight: 800; line-height: 1; text-decoration: none;
+      white-space: nowrap; flex: 0 0 auto; box-sizing: border-box;
+    }
+    .site-header .menu-toggle { flex: 0 0 48px; }
+  }
+</style>
+
 </head>
 
 <body>
@@ -1550,6 +1570,7 @@
         />
         <span>Lasvidex Financial</span>
       </a>
+      <a href="/contact/" class="mobile-header-cta" aria-label="Get Quote">Get Quote</a>
       <button
         class="menu-toggle"
         aria-label="Open menu"
