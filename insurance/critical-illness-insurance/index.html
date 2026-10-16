@@ -1372,6 +1372,181 @@
   }
 </style>
 
+
+<style id="header-footer-font-alignment">
+    /* Font alignment only — keeps the existing header/footer design unchanged. */
+    .site-header,
+    .site-header .nav,
+    .site-header .brand,
+    .site-header .brand span,
+    .site-header .nav-links,
+    .site-header .nav-links > a,
+    .site-header .insurance-dropdown,
+    .site-header .insurance-dropdown > summary,
+    .site-header .insurance-dropdown-menu a,
+    .site-header .mobile-header-cta,
+    .site-header .menu-toggle {
+      font-family: "Inter", sans-serif !important;
+    }
+
+    .footer,
+    .footer .footer-brand-lockup span,
+    .footer .footer-brand > p,
+    .footer .footer-column h3,
+    .footer .footer-links a,
+    .footer .footer-contact a,
+    .footer .footer-contact > span,
+    .footer .footer-next-step .footer-cta,
+    .footer .footer-social-links a,
+    .footer .footer-bottom p {
+      font-family: "Inter", sans-serif !important;
+    }
+
+    .site-header .brand span,
+    .footer .footer-brand-lockup span {
+      font-weight: 800;
+    }
+
+    .site-header .nav-links > a,
+    .site-header .insurance-dropdown > summary,
+    .site-header .insurance-dropdown-menu a,
+    .footer .footer-links a,
+    .footer .footer-contact a,
+    .footer .footer-contact > span,
+    .footer .footer-social-links a {
+      font-weight: 600;
+    }
+  </style>
+
+<style id="home-footer-font-match">
+  /* Footer typography alignment to match the supplied reference image only. */
+  .footer,
+  .footer .footer-brand-lockup span,
+  .footer .footer-brand > p,
+  .footer .footer-column h3,
+  .footer .footer-links a,
+  .footer .footer-contact a,
+  .footer .footer-contact > span,
+  .footer .footer-next-step .footer-cta,
+  .footer .footer-social-links a,
+  .footer .footer-bottom p {
+    font-family: "Inter", sans-serif !important;
+  }
+
+  .footer .footer-brand-lockup span {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+  }
+
+  .footer .footer-brand > p {
+    font-size: 15px;
+    line-height: 1.7;
+    font-weight: 400;
+  }
+
+  .footer .footer-column h3 {
+    font-size: 13px;
+    line-height: 1.25;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  .footer .footer-links a,
+  .footer .footer-contact a,
+  .footer .footer-contact > span,
+  .footer .footer-social-links a {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+
+  .footer .footer-next-step .footer-cta {
+    min-height: 50px;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 800;
+  }
+
+  .footer .footer-bottom p {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  @media (max-width: 700px) {
+    .footer .footer-brand-lockup span { font-size: 20px; }
+    .footer .footer-brand > p { font-size: 15px; }
+    .footer .footer-links a,
+    .footer .footer-contact a,
+    .footer .footer-contact > span,
+    .footer .footer-social-links a { font-size: 14px; }
+    .footer .footer-next-step .footer-cta { font-size: 15px; }
+    .footer .footer-bottom p { font-size: 13px; }
+  }
+</style>
+
+<style id="home-mobile-get-quote-button">
+  /* Add the existing Get Quote action beside the mobile menu only. */
+  .site-header .mobile-header-cta {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    .site-header .nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .site-header .mobile-header-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      min-height: 36px;
+      padding: 8px 11px;
+      border: 0;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #e0bd63 0%, #b88b2b 100%);
+      color: #111;
+      font-family: "Inter", sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1;
+      text-decoration: none;
+      white-space: nowrap;
+      flex: 0 0 auto;
+      box-sizing: border-box;
+    }
+
+    .site-header .menu-toggle {
+      flex: 0 0 48px;
+    }
+  }
+</style>
+
+<style id="life-insurance-home-typography-match">
+  /* Match the Home tab's typography scale while preserving Life Insurance content and layout. */
+  .life-hero, .life-covers, .life-cta { font-family: "Inter", sans-serif; }
+  .life-eyebrow, .life-section-eyebrow { font-family: "Inter", sans-serif !important; font-size: 13px !important; line-height: 1.3 !important; letter-spacing: 1.5px !important; }
+  .life-hero h1 { font-size: clamp(38px, 5vw, 64px) !important; line-height: 1.08 !important; letter-spacing: -1.6px !important; }
+  .life-lead { font-size: 18px !important; line-height: 1.7 !important; }
+  .life-covers h2, .life-cta h2 { font-size: clamp(30px, 3.4vw, 44px) !important; line-height: 1.12 !important; letter-spacing: -0.8px !important; }
+  .life-intro, .life-card p, .life-cta p { font-size: 16px !important; line-height: 1.7 !important; }
+  .life-card h3 { font-size: 22px !important; line-height: 1.25 !important; letter-spacing: -0.2px !important; }
+  .life-number { font-size: 16px !important; }
+  .life-btn { min-height: 50px !important; padding: 0 22px !important; font-size: 15px !important; line-height: 1.2 !important; }
+  @media (max-width: 700px) {
+    .life-hero h1 { font-size: clamp(32px, 8vw, 42px) !important; line-height: 1.12 !important; letter-spacing: -0.8px !important; }
+    .life-lead { font-size: 16px !important; line-height: 1.65 !important; }
+    .life-covers h2, .life-cta h2 { font-size: clamp(28px, 7vw, 34px) !important; line-height: 1.15 !important; letter-spacing: -0.4px !important; }
+    .life-intro, .life-card p, .life-cta p { font-size: 15px !important; line-height: 1.65 !important; }
+    .life-card h3 { font-size: 20px !important; }
+    .life-btn { min-height: 46px !important; padding: 0 18px !important; font-size: 14px !important; }
+  }
+</style>
 </head>
 
 <body>
@@ -1484,7 +1659,12 @@
         />
         <span>Lasvidex Financial</span>
       </a>
-      <button
+      
+      <a
+        href="/contact/"
+        class="mobile-header-cta"
+        aria-label="Get Quote"
+      >Get Quote</a><button
         class="menu-toggle"
         aria-label="Open menu"
         aria-expanded="false"
@@ -1512,7 +1692,7 @@
         <a href="/blog/">Blogs</a>
         <a href="/contact/" class="nav-cta quote-nav-link">Get Quote</a>
         <a href="/book-session/" class="nav-cta">
-          Request for a Consultation
+          Book consultation
         </a>
       </div>
 
@@ -1547,7 +1727,7 @@
 
           <div class="life-actions">
             <a class="life-btn life-btn-gold" href="/contact/">Get Quote</a>
-            <a class="life-btn life-btn-light" href="/book-session/">Request for a Consultation</a>
+            <a class="life-btn life-btn-light" href="/book-session/">Book consultation</a>
           </div>
         </div>
       </div>
@@ -2011,7 +2191,7 @@
 
       <div class="footer-buttons">
         <a class="footer-cta" href="/contact/">Get Quote</a>
-        <a class="footer-cta" href="/book-session/">Request for a Consultation</a>
+        <a class="footer-cta" href="/book-session/">Book consultation</a>
       </div>
 
       <div class="footer-social-links" aria-label="Social media links">
