@@ -2074,6 +2074,122 @@
 }
 </style>
 
+
+
+<style id="header-footer-font-alignment">
+    /* Font alignment only — keeps the existing header/footer design unchanged. */
+    .site-header,
+    .site-header .nav,
+    .site-header .brand,
+    .site-header .brand span,
+    .site-header .nav-links,
+    .site-header .nav-links > a,
+    .site-header .insurance-dropdown,
+    .site-header .insurance-dropdown > summary,
+    .site-header .insurance-dropdown-menu a,
+    .site-header .mobile-header-cta,
+    .site-header .menu-toggle {
+      font-family: "Inter", sans-serif !important;
+    }
+
+    .footer,
+    .footer .footer-brand-lockup span,
+    .footer .footer-brand > p,
+    .footer .footer-column h3,
+    .footer .footer-links a,
+    .footer .footer-contact a,
+    .footer .footer-contact > span,
+    .footer .footer-next-step .footer-cta,
+    .footer .footer-social-links a,
+    .footer .footer-bottom p {
+      font-family: "Inter", sans-serif !important;
+    }
+
+    .site-header .brand span,
+    .footer .footer-brand-lockup span {
+      font-weight: 800;
+    }
+
+    .site-header .nav-links > a,
+    .site-header .insurance-dropdown > summary,
+    .site-header .insurance-dropdown-menu a,
+    .footer .footer-links a,
+    .footer .footer-contact a,
+    .footer .footer-contact > span,
+    .footer .footer-social-links a {
+      font-weight: 600;
+    }
+  </style>
+
+<style id="home-footer-font-match">
+  /* Footer typography alignment to match the supplied reference image only. */
+  .footer,
+  .footer .footer-brand-lockup span,
+  .footer .footer-brand > p,
+  .footer .footer-column h3,
+  .footer .footer-links a,
+  .footer .footer-contact a,
+  .footer .footer-contact > span,
+  .footer .footer-next-step .footer-cta,
+  .footer .footer-social-links a,
+  .footer .footer-bottom p {
+    font-family: "Inter", sans-serif !important;
+  }
+
+  .footer .footer-brand-lockup span {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+  }
+
+  .footer .footer-brand > p {
+    font-size: 15px;
+    line-height: 1.7;
+    font-weight: 400;
+  }
+
+  .footer .footer-column h3 {
+    font-size: 13px;
+    line-height: 1.25;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  .footer .footer-links a,
+  .footer .footer-contact a,
+  .footer .footer-contact > span,
+  .footer .footer-social-links a {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+
+  .footer .footer-next-step .footer-cta {
+    min-height: 50px;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 800;
+  }
+
+  .footer .footer-bottom p {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  @media (max-width: 700px) {
+    .footer .footer-brand-lockup span { font-size: 20px; }
+    .footer .footer-brand > p { font-size: 15px; }
+    .footer .footer-links a,
+    .footer .footer-contact a,
+    .footer .footer-contact > span,
+    .footer .footer-social-links a { font-size: 14px; }
+    .footer .footer-next-step .footer-cta { font-size: 15px; }
+    .footer .footer-bottom p { font-size: 13px; }
+  }
+</style>
+
 </head>
 
 <body>
@@ -2246,7 +2362,7 @@
           href="/book-session/"
           class="nav-cta"
         >
-          Request for a Consultation
+          Book consultation
         </a>
 
       </div>
@@ -2635,7 +2751,7 @@
           class="cta-button"
           href="/book-session/"
         >
-          Request for a Consultation
+          Book consultation
         </a>
 
       </div>
@@ -3101,7 +3217,7 @@
 
       <div class="footer-buttons">
         <a class="footer-cta" href="/contact/">Get Quote</a>
-        <a class="footer-cta" href="/book-session/">Request for a Consultation</a>
+        <a class="footer-cta" href="/book-session/">Book consultation</a>
       </div>
 
       <div class="footer-social-links" aria-label="Social media links">
