@@ -1549,6 +1549,22 @@
     }
   </style>
 
+<style id="home-mobile-financial-services-label">
+  .site-header .nav-links .mobile-nav-label {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    .site-header .nav-links .desktop-nav-label {
+      display: none;
+    }
+
+    .site-header .nav-links .mobile-nav-label {
+      display: inline;
+    }
+  }
+</style>
+
 </head>
 
 <body>
@@ -1677,7 +1693,7 @@
       <div class="nav-links">
         <a href="/">Home</a>
         <a href="/about/">About</a>
-        <a href="/services/">Financial Planning</a>
+        <a href="/services/"><span class="desktop-nav-label">Financial Planning</span><span class="mobile-nav-label">Financial Services</span></a>
         <a href="/investments/">Investments</a>
         <details class="insurance-dropdown">
           <summary>Insurance</summary>
