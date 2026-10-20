@@ -1547,6 +1547,79 @@
     .life-btn { min-height: 46px !important; padding: 0 18px !important; font-size: 14px !important; }
   }
 </style>
+
+<style id="critical-illness-area-section">
+  .critical-illness-area,
+  .critical-illness-area * { box-sizing: border-box; }
+  .critical-illness-area-inner {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr);
+    gap: 56px;
+    align-items: start;
+  }
+  .critical-illness-area-eyebrow {
+    margin: 0 0 18px;
+    color: #766b7e;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .critical-illness-area h2 {
+    margin: 0 0 30px;
+    color: #171025;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: clamp(32px, 3vw, 46px);
+    line-height: 1.12;
+    letter-spacing: -0.7px;
+  }
+  .critical-illness-area-copy {
+    margin: 0;
+    color: #796d80;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.62;
+  }
+  .critical-illness-area-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .critical-illness-area-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 54px;
+    padding: 0 23px;
+    border: 1px solid #d9c8dd;
+    border-radius: 9px;
+    background: rgba(255,255,255,.68);
+    color: #35134b;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 1.25;
+    font-weight: 800;
+    transition: background .2s ease, border-color .2s ease;
+  }
+  .critical-illness-area-actions a:hover {
+    background: #fff;
+    border-color: #bca5c5;
+  }
+  @media (max-width: 760px) {
+    .critical-illness-area { padding: 52px 20px !important; }
+    .critical-illness-area-inner { grid-template-columns: 1fr; gap: 26px; }
+    .critical-illness-area h2 { font-size: clamp(30px, 7vw, 40px); margin-bottom: 24px; }
+    .critical-illness-area-copy { font-size: 15px; line-height: 1.65; }
+    .critical-illness-area-actions { gap: 12px; }
+    .critical-illness-area-actions a { min-height: 50px; padding: 0 17px; font-size: 14px; }
+  }
+</style>
+
 </head>
 
 <body>
@@ -1784,6 +1857,27 @@
           with next steps.
         </p>
         <a class="life-cta-btn" href="/contact/">Get Quote</a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CRITICAL ILLNESS PROTECTION IN YOUR AREA
+         ========================================================= -->
+    <section
+      class="critical-illness-area"
+      aria-label="Critical illness protection in your area"
+      style="border-top:1px solid rgba(27,42,100,.08); padding:72px 24px; background:linear-gradient(180deg,#fffaf2 0%,#fff5f5 100%);"
+    >
+      <div class="critical-illness-area-inner">
+        <div>
+          <p class="critical-illness-area-eyebrow">Serving Toronto, GTA and Canada</p>
+          <h2>Critical illness protection for your financial plan</h2>
+          <div class="critical-illness-area-actions">
+            <a href="/insurance/disability-insurance/">Explore disability insurance</a>
+            <a href="/book-session/">Book a consultation</a>
+          </div>
+        </div>
+        <p class="critical-illness-area-copy">For families and professionals in Toronto and the GTA, a serious illness can affect savings, bills and recovery time. Lasvidex Financial helps you discuss lump-sum critical illness coverage, eligible conditions, waiting periods and policy exclusions, with virtual consultations available across Canada.</p>
       </div>
     </section>
 
@@ -2127,9 +2221,10 @@
       </a>
 
       <p>
-        Empowering individuals, families, and business owners with strategic
-        financial solutions for confident wealth building, protection, and legacy
-        planning.
+        Insurance, investment and financial strategies for Canadians. Based in Toronto, Ontario.
+        Serving clients in Toronto, the Greater Toronto Area, and across Canada.
+        The information provided on this website is for general purposes only and does not
+        guarantee approval, returns, tax outcomes, or financial results.
       </p>
     </div>
 
