@@ -1545,6 +1545,71 @@
   }
 </style>
 
+<style id="health-dental-feature-section">
+  .health-dental-feature {
+    width: 100%;
+    background: #fff6f3;
+    color: #17102a;
+    padding: 86px 24px 82px;
+    box-sizing: border-box;
+  }
+  .health-dental-feature-inner {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(300px, .9fr);
+    gap: 72px;
+    align-items: start;
+  }
+  .health-dental-feature-eyebrow {
+    margin: 0 0 20px;
+    color: #76677c;
+    font: 800 13px/1.5 "Inter", sans-serif;
+    letter-spacing: 1.5px;
+  }
+  .health-dental-feature-copy h2 {
+    max-width: 760px;
+    margin: 0 0 32px;
+    color: #17102a;
+    font: 700 clamp(38px, 4vw, 48px)/1.08 "Playfair Display", Georgia, serif;
+    letter-spacing: -1.2px;
+  }
+  .health-dental-feature-description {
+    margin: 0;
+    color: #76677c;
+    font: 400 16px/1.7 "Inter", sans-serif;
+  }
+  .health-dental-feature-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .health-dental-feature-btn {
+    min-height: 54px;
+    padding: 0 23px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d8c8d8;
+    border-radius: 9px;
+    background: #fffdfc;
+    color: #35154e;
+    text-decoration: none;
+    font: 800 15px/1.2 "Inter", sans-serif;
+    box-sizing: border-box;
+  }
+  .health-dental-feature-btn:hover {
+    border-color: #b88b2b;
+  }
+  @media (max-width: 800px) {
+    .health-dental-feature { padding: 58px 20px 62px; }
+    .health-dental-feature-inner { grid-template-columns: 1fr; gap: 28px; }
+    .health-dental-feature-copy h2 { font-size: clamp(32px, 7vw, 40px); }
+    .health-dental-feature-actions { gap: 10px; }
+    .health-dental-feature-btn { min-height: 48px; padding: 0 16px; font-size: 14px; }
+  }
+</style>
+
 </head>
 
 <body>
@@ -1700,7 +1765,7 @@
   <section class="travel-hero">
     <div class="travel-hero-inner">
 
-      <p class="travel-eyebrow">LASVIDEX FINANCIAL INSURANCE</p>
+      <p class="travel-eyebrow">SERVING TORONTO, GTA AND CANADA</p>
 
       <h1>
         Health &amp; Dental Insurance Options
@@ -1772,6 +1837,23 @@
           Request a quote and share what you want to protect. Lasvidex Financial will follow up with next steps.
         </p>
         <a href="/contact/" style="display:inline-flex;align-items:center;justify-content:center;min-height:62px;padding:0 29px;border-radius:10px;background:#fff;color:#071d3a;text-decoration:none;font:800 17px/1 Inter,sans-serif;">Get Quote</a>
+      </div>
+    </section>
+
+    <!-- HEALTH & DENTAL COVERAGE FEATURE — added above Trusted Financial Partners -->
+    <section class="health-dental-feature" aria-label="Health and dental coverage considerations">
+      <div class="health-dental-feature-inner">
+        <div class="health-dental-feature-copy">
+          <p class="health-dental-feature-eyebrow">SERVING TORONTO, GTA AND CANADA</p>
+          <h2>Health and dental coverage considerations</h2>
+          <div class="health-dental-feature-actions">
+            <a href="/insurance/" class="health-dental-feature-btn">Explore other insurance options</a>
+            <a href="/book-session/" class="health-dental-feature-btn">Book consultation</a>
+          </div>
+        </div>
+        <p class="health-dental-feature-description">
+          People without comprehensive workplace benefits, self-employed professionals and business owners in Toronto, GTA and across Canada may want to review prescription, dental and paramedical coverage. Compare eligibility, annual limits, exclusions and cost before choosing a plan.
+        </p>
       </div>
     </section>
 
@@ -2076,10 +2158,11 @@
         <span>Lasvidex Financial</span>
       </a>
 
+      <p style="margin:0 0 24px;">
+        Insurance, investment and financial strategies for Canadians. Based in Toronto, Ontario. Serving clients in Toronto, the Greater Toronto Area, and across Canada.
+      </p>
       <p>
-        Empowering individuals, families, and business owners with strategic
-        financial solutions for confident wealth building, protection, and legacy
-        planning.
+        The information provided on this website is for general purposes only and does not guarantee approval, returns, tax outcomes, or financial results.
       </p>
     </div>
 
