@@ -1550,6 +1550,88 @@
   }
 </style>
 
+
+
+  <style id="income-protection-feature-section">
+    .income-protection-feature {
+      width: 100%;
+      box-sizing: border-box;
+      background: #fff8f5;
+      color: #071d3a;
+      padding: 100px 0 72px;
+      font-family: "Inter", sans-serif;
+    }
+    .income-protection-feature-inner {
+      width: min(1248px, calc(100% - 80px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(300px, .85fr);
+      gap: 100px;
+      align-items: start;
+    }
+    .income-protection-eyebrow {
+      max-width: 470px;
+      margin: 8px 0 18px;
+      color: #6d587f;
+      font-size: 13px;
+      line-height: 1.55;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .income-protection-feature h2 {
+      max-width: 690px;
+      margin: 0 0 32px;
+      color: #071d3a;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(38px, 3.2vw, 48px);
+      line-height: 1.08;
+      letter-spacing: -1.2px;
+      font-weight: 700;
+    }
+    .income-protection-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border: 1px solid #d7c9dc;
+      border-radius: 9px;
+      background: #fffdfc;
+      color: #241344;
+      text-decoration: none;
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+    .income-protection-description {
+      margin: 0;
+      color: #6d587f;
+      font-size: 16px;
+      line-height: 1.62;
+      font-weight: 400;
+    }
+    @media (max-width: 900px) {
+      .income-protection-feature { padding: 70px 0 60px; }
+      .income-protection-feature-inner {
+        width: min(100% - 40px, 680px);
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .income-protection-feature h2 {
+        font-size: clamp(34px, 7vw, 44px);
+      }
+    }
+    @media (max-width: 600px) {
+      .income-protection-feature { padding: 56px 0 48px; }
+      .income-protection-feature-inner { width: calc(100% - 28px); }
+      .income-protection-eyebrow { font-size: 12px; letter-spacing: 1.2px; }
+      .income-protection-feature h2 { font-size: 35px; line-height: 1.1; }
+      .income-protection-description { font-size: 15px; line-height: 1.65; }
+      .income-protection-button { width: 100%; }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -1787,6 +1869,24 @@
           with next steps.
         </p>
         <a class="life-cta-btn" href="/contact/">Get Quote</a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         INCOME PROTECTION FEATURE
+         ========================================================= -->
+    <section class="income-protection-feature" aria-label="Income protection planning">
+      <div class="income-protection-feature-inner">
+        <div class="income-protection-feature-copy">
+          <p class="income-protection-eyebrow">SERVING TORONTO, GTA AND CANADA</p>
+          <h2>Protecting income if illness or injury interrupts work</h2>
+          <a class="income-protection-button" href="/book-session/">Book a consultation</a>
+        </div>
+        <p class="income-protection-description">
+          For working families and self-employed professionals in Toronto, Oshawa and across Canada,
+          income protection can help address the financial impact of illness or injury. Review waiting
+          periods, benefit periods and workplace coverage when considering your options.
+        </p>
       </div>
     </section>
 
@@ -2082,6 +2182,14 @@
 
   <footer class="footer">
 
+  <style id="footer-brand-paragraph-spacing">
+    .footer .footer-brand > p + p {
+      margin-top: 24px;
+    }
+  </style>
+
+
+
   
 
   <style id="footer-tiktok-cyan-only">
@@ -2130,9 +2238,10 @@
       </a>
 
       <p>
-        Empowering individuals, families, and business owners with strategic
-        financial solutions for confident wealth building, protection, and legacy
-        planning.
+        Insurance, investment and financial strategies for Canadians. Based in Toronto, Ontario. Serving clients in Toronto, the Greater Toronto Area, and across Canada.
+      </p>
+      <p class="footer-disclaimer">
+        The information provided on this website is for general purposes only and does not guarantee approval, returns, tax outcomes, or financial results.
       </p>
     </div>
 
