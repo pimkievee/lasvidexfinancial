@@ -1549,6 +1549,91 @@
   }
 </style>
 
+<style id="travel-location-intro-and-footer-disclaimer">
+  .travel-location-section {
+    width: 100%;
+    background: #fff8f5;
+    color: #17102a;
+  }
+  .travel-location-inner {
+    width: min(1215px, calc(100% - 64px));
+    margin: 0 auto;
+    padding: 105px 0 90px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(300px, 1fr);
+    column-gap: 72px;
+    align-items: start;
+  }
+  .travel-location-eyebrow {
+    margin: 0 0 20px;
+    color: #75677b;
+    font: 800 13px/1.5 "Inter", sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .travel-location-main h2 {
+    margin: 0;
+    max-width: 760px;
+    color: #17102a;
+    font: 700 clamp(38px, 4vw, 48px)/1.12 "Playfair Display", Georgia, serif;
+    letter-spacing: -1.1px;
+  }
+  .travel-location-copy {
+    margin: 0;
+    color: #75677b;
+    font: 400 16px/1.7 "Inter", sans-serif;
+  }
+  .travel-location-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+  }
+  .travel-location-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 54px;
+    padding: 0 23px;
+    border: 1px solid rgba(110, 75, 130, .28);
+    border-radius: 9px;
+    background: #fffdfc;
+    color: #35134d;
+    text-decoration: none;
+    font: 800 15px/1.3 "Inter", sans-serif;
+  }
+  .travel-location-button:hover {
+    border-color: #ae8126;
+    color: #35134d;
+  }
+  .footer .footer-brand > p + p.footer-disclaimer {
+    margin-top: 25px;
+  }
+  @media (max-width: 800px) {
+    .travel-location-inner {
+      width: calc(100% - 36px);
+      padding: 65px 0 65px;
+      grid-template-columns: 1fr;
+      row-gap: 25px;
+    }
+    .travel-location-main h2 {
+      font-size: clamp(32px, 7vw, 40px);
+      letter-spacing: -.5px;
+    }
+    .travel-location-copy {
+      font-size: 16px;
+    }
+    .travel-location-actions {
+      gap: 12px;
+    }
+    .travel-location-button {
+      min-height: 48px;
+      padding: 0 16px;
+      font-size: 14px;
+    }
+  }
+</style>
+
 </head>
 
 <body>
@@ -1906,6 +1991,26 @@
   </section>
 
 
+    <!-- TRAVEL INSURANCE INTRO SECTION -->
+    <section class="travel-location-section">
+      <div class="travel-location-inner">
+        <div class="travel-location-main">
+          <p class="travel-location-eyebrow">Serving Toronto, GTA and Canada</p>
+          <h2>Travel and visitor insurance support</h2>
+          <div class="travel-location-actions">
+            <a class="travel-location-button" href="/contact/">Request a travel insurance quote</a>
+            <a class="travel-location-button" href="/book-session/">Book consultation</a>
+          </div>
+        </div>
+        <p class="travel-location-copy">
+          Planning a family visit to Toronto or GTA, a Super Visa stay or travel
+          outside Canada? Coverage needs differ depending on the traveller,
+          destination, length of stay and medical history. Review relevant policy
+          limits, exclusions and eligibility before choosing a travel insurance option.
+        </p>
+      </div>
+    </section>
+
     <section
       id="trusted-partners"
       class="trusted-partners"
@@ -2198,9 +2303,13 @@
       </a>
 
       <p>
-        Empowering individuals, families, and business owners with strategic
-        financial solutions for confident wealth building, protection, and legacy
-        planning.
+        Insurance, investment and financial strategies for Canadians. Based in
+        Toronto, Ontario. Serving clients in Toronto, the Greater Toronto Area,
+        and across Canada.
+      </p>
+      <p class="footer-disclaimer">
+        The information provided on this website is for general purposes only
+        and does not guarantee approval, returns, tax outcomes, or financial results.
       </p>
     </div>
 
