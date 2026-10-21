@@ -846,11 +846,6 @@
     font-weight: 400;
   }
 
-  /* Keep the company description and disclaimer as separate paragraphs. */
-  .footer-brand > p:first-of-type {
-    margin-bottom: 30px;
-  }
-
   .footer-column h3 {
     margin: 0 0 25px;
     color: #ffffff;
@@ -1622,6 +1617,37 @@
     .critical-illness-area-copy { font-size: 15px; line-height: 1.65; }
     .critical-illness-area-actions { gap: 12px; }
     .critical-illness-area-actions a { min-height: 50px; padding: 0 17px; font-size: 14px; }
+  }
+</style>
+
+
+
+<style id="about-tab-match-critical-insurance-background-and-footer">
+  /* Match the About tab's white page background without changing existing layout. */
+  html,
+  body {
+    background: #ffffff !important;
+  }
+
+  main,
+  main > section,
+  main > .section,
+  main .section,
+  main .trusted-partners,
+  .life-hero,
+  .life-covers,
+  .life-cta,
+  .critical-illness-area {
+    background-color: #ffffff !important;
+  }
+
+  /* Keep the existing branded navy footer and separate its two paragraphs. */
+  .footer {
+    background-color: #032b55 !important;
+  }
+
+  .footer .footer-brand > p + p {
+    margin-top: 28px !important;
   }
 </style>
 
